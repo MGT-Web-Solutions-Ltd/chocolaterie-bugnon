@@ -1,0 +1,278 @@
+<style>
+  .card-image { aspect-ratio: unset !important; display: block !important; }
+  .wf { font-family: Georgia, serif; background: #faf6f0; color: #2a1508; }
+  .wf-section { padding: 18px 20px; border-bottom: 1px solid #3d1f0c18; }
+  .wf-label { font-size: 8px; letter-spacing: 3px; text-transform: uppercase; font-family: system-ui, sans-serif; color: #9c6e3c; margin-bottom: 6px; }
+  .wf-ph { background: linear-gradient(135deg, #d4b896, #c4a07a); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #faf6f0; font-size: 9px; font-family: system-ui, sans-serif; letter-spacing: 1px; opacity: 0.8; }
+  .wf-pill { display: inline-block; border-radius: 2px; font-family: system-ui, sans-serif; font-size: 9px; padding: 4px 10px; }
+  .wf-pill-dark { background: #3d1f0c; color: #faf6f0; }
+  .wf-pill-outline { border: 1px solid #9c6e3c; color: #9c6e3c; }
+  .wf-pill-ghost { border: 1px solid #3d1f0c44; color: #3d1f0c; }
+  .wf-rule { width: 28px; height: 2px; background: #9c6e3c; margin: 8px 0; }
+  .wf-tag { background: #3d1f0c11; border: 1px solid #3d1f0c22; color: #5a3d25; border-radius: 2px; font-size: 9px; font-family: system-ui, sans-serif; padding: 3px 8px; display: inline-block; margin-right: 4px; }
+</style>
+
+<h2>Page wireframe — Chocolaterie Bugnon</h2>
+<p class="subtitle">Single page, long scroll. Section par section. Cliquez pour sélectionner si tout vous convient.</p>
+
+<div style="max-width: 680px; border: 1px solid #d1b89044; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(61,31,12,0.12);" class="wf">
+
+  <!-- 1. NAV -->
+  <div class="wf-section" style="background: #faf6f0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;">
+    <div>
+      <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; color: #3d1f0c;">Bugnon</div>
+      <div style="font-size: 8px; font-family: system-ui; color: #9c6e3c; letter-spacing: 1px;">Chocolatier artisan</div>
+    </div>
+    <div style="display: flex; gap: 14px; align-items: center;">
+      <span style="font-size: 10px; color: #7a5c3c; font-family: system-ui;">Produits</span>
+      <span style="font-size: 10px; color: #7a5c3c; font-family: system-ui;">Sur mesure</span>
+      <span style="font-size: 10px; color: #7a5c3c; font-family: system-ui;">Événements</span>
+      <span style="font-size: 10px; color: #7a5c3c; font-family: system-ui;">Contact</span>
+      <span class="wf-pill wf-pill-dark">Itinéraire ↗</span>
+    </div>
+  </div>
+
+  <!-- 2. HERO -->
+  <div class="wf-section" style="background: #f3ece2;">
+    <div class="wf-label">① Hero</div>
+    <div style="display: grid; grid-template-columns: 55% 45%; gap: 16px; align-items: center;">
+      <div>
+        <div style="font-size: 9px; letter-spacing: 4px; font-family: system-ui; color: #9c6e3c; margin-bottom: 8px; text-transform: uppercase;">Artisan chocolatier · Lausanne · Depuis 2014</div>
+        <div style="font-size: 26px; line-height: 1.15; color: #2a1508; font-style: italic; margin-bottom: 6px;">Chaque chocolat<br>raconte une histoire</div>
+        <div class="wf-rule"></div>
+        <div style="font-size: 11px; font-family: system-ui; color: #5a3d25; line-height: 1.6; margin-bottom: 14px;">Confectionnés à la main à Lausanne.<br>Grands crus, créations de saison,<br>dégustations en boutique.</div>
+        <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+          <span class="wf-pill wf-pill-dark">Itinéraire</span>
+          <span class="wf-pill wf-pill-outline">Sur mesure (48h)</span>
+        </div>
+        <div style="font-size: 9px; font-family: system-ui; color: #9c6e3c; letter-spacing: 1px;">📍 Rue du Bugnon 10 · 1005 Lausanne</div>
+      </div>
+      <div class="wf-ph" style="height: 180px; border-radius: 6px;">Photo signature</div>
+    </div>
+  </div>
+
+  <!-- 3. USP BANDEAU -->
+  <div class="wf-section" style="background: #3d1f0c;">
+    <div class="wf-label" style="color: #b8956a;">② Bandeau preuves</div>
+    <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; text-align: center;">
+      <div style="color: #faf6f0;">
+        <div style="font-size: 15px; font-style: italic; color: #e8c98a; margin-bottom: 3px;">2014</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #faf6f0aa; line-height: 1.4;">En boutique<br>à Lausanne</div>
+      </div>
+      <div style="color: #faf6f0;">
+        <div style="font-size: 15px; font-style: italic; color: #e8c98a; margin-bottom: 3px;">10+</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #faf6f0aa; line-height: 1.4;">Origines<br>de cacao</div>
+      </div>
+      <div style="color: #faf6f0;">
+        <div style="font-size: 15px; font-style: italic; color: #e8c98a; margin-bottom: 3px;">100%</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #faf6f0aa; line-height: 1.4;">Beurre de cacao<br>& vanille pure</div>
+      </div>
+      <div style="color: #faf6f0;">
+        <div style="font-size: 15px; font-style: italic; color: #e8c98a; margin-bottom: 3px;">48h</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #faf6f0aa; line-height: 1.4;">Délai sur<br>mesure</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. VALEURS -->
+  <div class="wf-section" style="background: #faf6f0;">
+    <div class="wf-label">③ Nos valeurs</div>
+    <div style="text-align: center; margin-bottom: 14px;">
+      <div style="font-size: 20px; font-style: italic; color: #2a1508; margin-bottom: 4px;">L'artisan, le goût, l'émotion</div>
+      <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c;">Trois engagements au cœur de chaque création.</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 10px;">
+      <div style="background: #f3ece2; border-radius: 6px; padding: 14px; text-align: center;">
+        <div style="font-size: 18px; margin-bottom: 6px;">✦</div>
+        <div style="font-size: 12px; font-weight: 600; color: #2a1508; margin-bottom: 4px;">Artisanat</div>
+        <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c; line-height: 1.5;">Chaque création façonnée à la main avec soin.</div>
+      </div>
+      <div style="background: #f3ece2; border-radius: 6px; padding: 14px; text-align: center;">
+        <div style="font-size: 18px; margin-bottom: 6px;">◈</div>
+        <div style="font-size: 12px; font-weight: 600; color: #2a1508; margin-bottom: 4px;">Qualité</div>
+        <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c; line-height: 1.5;">Grands crus sélectionnés, arômes francs.</div>
+      </div>
+      <div style="background: #f3ece2; border-radius: 6px; padding: 14px; text-align: center;">
+        <div style="font-size: 18px; margin-bottom: 6px;">♡</div>
+        <div style="font-size: 12px; font-weight: 600; color: #2a1508; margin-bottom: 4px;">Émotion</div>
+        <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c; line-height: 1.5;">Goût, partage, raffinement.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. PRODUITS TILES -->
+  <div class="wf-section" style="background: #f3ece2;">
+    <div class="wf-label">④ Nos produits</div>
+    <div style="font-size: 20px; font-style: italic; color: #2a1508; margin-bottom: 4px; text-align: center;">Découvrir nos créations</div>
+    <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c; text-align: center; margin-bottom: 14px;">Chocolats · Confiseries · Glaces · Sorbets · Saisonnier</div>
+    <div style="display: grid; grid-template-columns: repeat(5,1fr); gap: 6px;">
+      <div style="text-align: center;">
+        <div class="wf-ph" style="height: 70px; border-radius: 4px; margin-bottom: 5px; font-size: 8px;">Photo</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #3d1f0c; font-weight: 600;">Chocolats</div>
+      </div>
+      <div style="text-align: center;">
+        <div class="wf-ph" style="height: 70px; border-radius: 4px; margin-bottom: 5px; font-size: 8px;">Photo</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #3d1f0c; font-weight: 600;">Confiseries</div>
+      </div>
+      <div style="text-align: center;">
+        <div class="wf-ph" style="height: 70px; border-radius: 4px; margin-bottom: 5px; font-size: 8px;">Photo</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #3d1f0c; font-weight: 600;">Glaces</div>
+      </div>
+      <div style="text-align: center;">
+        <div class="wf-ph" style="height: 70px; border-radius: 4px; margin-bottom: 5px; font-size: 8px;">Photo</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #3d1f0c; font-weight: 600;">Sorbets</div>
+      </div>
+      <div style="text-align: center;">
+        <div class="wf-ph" style="height: 70px; border-radius: 4px; margin-bottom: 5px; font-size: 8px; background: linear-gradient(135deg,#c8956a,#a06840);">Photo</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #9c6e3c; font-weight: 600;">Saisonnier ✦</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. CAMPAGNE SAISONNIÈRE -->
+  <div class="wf-section" style="background: #3d1f0c;">
+    <div class="wf-label" style="color: #b8956a;">⑤ Campagne saisonnière</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: center;">
+      <div class="wf-ph" style="height: 110px; background: linear-gradient(135deg, #7a4020, #4a2010);">Visuel saison</div>
+      <div>
+        <div style="font-size: 9px; letter-spacing: 3px; font-family: system-ui; color: #e8c98a; margin-bottom: 8px; text-transform: uppercase;">Pâques 2025</div>
+        <div style="font-size: 18px; line-height: 1.2; color: #faf6f0; font-style: italic; margin-bottom: 8px;">Offrez une Pâques gourmande</div>
+        <div style="font-size: 10px; font-family: system-ui; color: #faf6f0aa; margin-bottom: 12px; line-height: 1.5;">Œufs en chocolat artisanal, le cadeau idéal pour célébrer ensemble.</div>
+        <div style="display: flex; gap: 8px;">
+          <span class="wf-pill" style="background: #e8c98a; color: #2a1508;">Découvrir</span>
+          <span class="wf-pill" style="border: 1px solid #faf6f044; color: #faf6f0;">Sur mesure</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. SUR MESURE -->
+  <div class="wf-section" style="background: #faf6f0;">
+    <div class="wf-label">⑥ Sur mesure (48h)</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start;">
+      <div>
+        <div style="font-size: 20px; font-style: italic; color: #2a1508; margin-bottom: 6px; line-height: 1.2;">Une création à votre image</div>
+        <div class="wf-rule"></div>
+        <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c; margin-bottom: 12px; line-height: 1.6;">Entreprises, anniversaires, mariages. Commande en 48h minimum, retrait en boutique.</div>
+        <div style="margin-bottom: 8px; display: flex; flex-direction: column; gap: 6px;">
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 10px; font-family: system-ui; color: #5a3d25;">
+            <span style="color: #9c6e3c;">◉</span> Cadeau d'entreprise
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 10px; font-family: system-ui; color: #5a3d25;">
+            <span style="color: #9c6e3c;">◉</span> Anniversaire & mariage
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 10px; font-family: system-ui; color: #5a3d25;">
+            <span style="color: #9c6e3c;">◉</span> Cadeau personnalisé
+          </div>
+        </div>
+        <span class="wf-pill wf-pill-dark">Faire une demande</span>
+      </div>
+      <div style="background: #f3ece2; border-radius: 6px; padding: 14px;">
+        <div style="font-size: 9px; font-family: system-ui; color: #9c6e3c; letter-spacing: 2px; margin-bottom: 10px; text-transform: uppercase;">Formulaire de demande</div>
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <div style="background: #faf6f0; border: 1px solid #d4b89644; height: 22px; border-radius: 3px; font-size: 9px; font-family: system-ui; color: #9c6e3c; padding: 0 8px; display: flex; align-items: center;">Nom</div>
+          <div style="background: #faf6f0; border: 1px solid #d4b89644; height: 22px; border-radius: 3px; font-size: 9px; font-family: system-ui; color: #9c6e3c; padding: 0 8px; display: flex; align-items: center;">Email / Téléphone</div>
+          <div style="background: #faf6f0; border: 1px solid #d4b89644; height: 22px; border-radius: 3px; font-size: 9px; font-family: system-ui; color: #9c6e3c; padding: 0 8px; display: flex; align-items: center;">Type de demande</div>
+          <div style="background: #faf6f0; border: 1px solid #d4b89644; height: 40px; border-radius: 3px; font-size: 9px; font-family: system-ui; color: #9c6e3c; padding: 6px 8px;">Message libre...</div>
+          <span class="wf-pill wf-pill-dark" style="text-align: center;">Envoyer ma demande</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. ÉVÉNEMENTS -->
+  <div class="wf-section" style="background: #f3ece2;">
+    <div class="wf-label">⑦ Événements — Fontaine chocolat</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: center;">
+      <div>
+        <div style="font-size: 20px; font-style: italic; color: #2a1508; margin-bottom: 6px; line-height: 1.2;">La fontaine chocolat<br>pour vos événements</div>
+        <div class="wf-rule"></div>
+        <div style="font-size: 10px; font-family: system-ui; color: #7a5c3c; margin-bottom: 12px; line-height: 1.6;">Mariages, soirées d'entreprise, anniversaires. Hauteur 80 cm, chocolat de couverture, livraison & installation.</div>
+        <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px;">
+          <span class="wf-tag">80 cm</span>
+          <span class="wf-tag">150 CHF / jour</span>
+          <span class="wf-tag">Caution 600 CHF</span>
+        </div>
+        <span class="wf-pill wf-pill-outline">Demander un devis</span>
+      </div>
+      <div class="wf-ph" style="height: 110px; border-radius: 6px;">Photo fontaine</div>
+    </div>
+  </div>
+
+  <!-- 9. AVIS -->
+  <div class="wf-section" style="background: #faf6f0;">
+    <div class="wf-label">⑧ Avis clients</div>
+    <div style="text-align: center; margin-bottom: 12px;">
+      <div style="font-size: 20px; font-style: italic; color: #2a1508; margin-bottom: 4px;">Ils en parlent</div>
+      <div style="color: #e8c98a; font-size: 13px; letter-spacing: 2px;">★★★★★</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+      <div style="background: #f3ece2; border-radius: 6px; padding: 12px; border-left: 2px solid #9c6e3c;">
+        <div style="font-size: 10px; font-family: system-ui; color: #5a3d25; line-height: 1.5; margin-bottom: 8px; font-style: italic;">"Des chocolats d'une finesse extraordinaire. Une adresse incontournable à Lausanne."</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #9c6e3c; font-weight: 600;">— Marie L.</div>
+      </div>
+      <div style="background: #f3ece2; border-radius: 6px; padding: 12px; border-left: 2px solid #9c6e3c;">
+        <div style="font-size: 10px; font-family: system-ui; color: #5a3d25; line-height: 1.5; margin-bottom: 8px; font-style: italic;">"Commande sur mesure pour notre mariage, un résultat magnifique. Merci !"</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #9c6e3c; font-weight: 600;">— Thomas & Camille</div>
+      </div>
+      <div style="background: #f3ece2; border-radius: 6px; padding: 12px; border-left: 2px solid #9c6e3c;">
+        <div style="font-size: 10px; font-family: system-ui; color: #5a3d25; line-height: 1.5; margin-bottom: 8px; font-style: italic;">"La fontaine chocolat pour notre soirée d'entreprise — tout le monde était conquis."</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #9c6e3c; font-weight: 600;">— Sophie M., Directrice</div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 10px;"><span class="wf-pill wf-pill-ghost" style="font-size: 9px;">Voir tous les avis Google →</span></div>
+  </div>
+
+  <!-- 10. ACCÈS & CONTACT -->
+  <div class="wf-section" style="background: #f3ece2;">
+    <div class="wf-label">⑨ Accès & Contact</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+      <div>
+        <div style="font-size: 18px; font-style: italic; color: #2a1508; margin-bottom: 10px;">Venez nous rendre visite</div>
+        <div style="font-size: 10px; font-family: system-ui; color: #5a3d25; line-height: 2; margin-bottom: 12px;">
+          📍 Rue du Bugnon 10, 1005 Lausanne<br>
+          📞 +41 21 558 38 07<br>
+          🕐 Lun–Ven 9h–18h30 · Sam 9h–17h
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <span class="wf-pill wf-pill-dark">Itinéraire ↗</span>
+          <span class="wf-pill wf-pill-outline">Appeler</span>
+        </div>
+      </div>
+      <div class="wf-ph" style="height: 110px; border-radius: 6px; background: linear-gradient(135deg,#c4d4b0,#98b480);">Carte / Map</div>
+    </div>
+  </div>
+
+  <!-- 11. FOOTER -->
+  <div class="wf-section" style="background: #2a1508; border-bottom: none;">
+    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; margin-bottom: 14px;">
+      <div>
+        <div style="font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #faf6f0; margin-bottom: 4px;">Bugnon</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #faf6f0aa; line-height: 1.8;">Rue du Bugnon 10 · 1005 Lausanne<br>+41 21 558 38 07</div>
+        <div style="margin-top: 10px; display: flex; gap: 6px;">
+          <span class="wf-pill" style="background: #faf6f011; color: #faf6f0; border: 1px solid #faf6f022; font-size: 8px;">Instagram</span>
+          <span class="wf-pill" style="background: #faf6f011; color: #faf6f0; border: 1px solid #faf6f022; font-size: 8px;">Facebook</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #b8956a; margin-bottom: 8px; font-family: system-ui;">Navigation</div>
+        <div style="display: flex; flex-direction: column; gap: 4px; font-size: 10px; font-family: system-ui; color: #faf6f088; line-height: 1.8;">Produits<br>Sur mesure<br>Événements<br>Contact</div>
+      </div>
+      <div>
+        <div style="font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #b8956a; margin-bottom: 8px; font-family: system-ui;">Newsletter</div>
+        <div style="font-size: 9px; font-family: system-ui; color: #faf6f088; margin-bottom: 8px; line-height: 1.5;">Nouveautés & créations de saison.</div>
+        <div style="background: #faf6f011; border: 1px solid #faf6f022; height: 24px; border-radius: 3px; font-size: 9px; font-family: system-ui; color: #faf6f055; padding: 0 8px; display: flex; align-items: center; margin-bottom: 6px;">Votre email</div>
+        <span class="wf-pill" style="background: #b8956a; color: #2a1508; font-size: 9px;">S'inscrire</span>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #faf6f011; padding-top: 10px; font-size: 9px; font-family: system-ui; color: #faf6f044; display: flex; justify-content: space-between;">
+      <span>© 2025 Chocolaterie du Bugnon</span>
+      <span>Lausanne · Suisse</span>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top: 16px; padding: 12px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px;">
+  <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;"><strong style="color: var(--text-primary);">9 sections</strong> · Navigation fixe · Scroll continu · Mobile-first responsive · Vanilla HTML/CSS/JS · Palette chaude parchemin + brun cacao + or</p>
+</div>

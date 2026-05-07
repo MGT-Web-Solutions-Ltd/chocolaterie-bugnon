@@ -1,0 +1,104 @@
+<h2>Hero Layout — Style B (Clair & Chaleureux)</h2>
+<p class="subtitle">How should the top of the page feel when you arrive?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="split" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#faf6f0; padding:20px; font-family:Georgia,serif; min-height:220px;">
+      <!-- Nav -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+        <span style="color:#3d1f0c; font-size:13px; letter-spacing:3px; font-family:system-ui,sans-serif; text-transform:uppercase;">Bugnon</span>
+        <div style="display:flex; gap:16px;">
+          <span style="color:#7a5c3c; font-size:10px; font-family:system-ui,sans-serif;">Produits</span>
+          <span style="color:#7a5c3c; font-size:10px; font-family:system-ui,sans-serif;">Sur mesure</span>
+          <span style="color:#7a5c3c; font-size:10px; font-family:system-ui,sans-serif;">Contact</span>
+          <span style="background:#3d1f0c; color:#faf6f0; padding:3px 10px; font-size:10px; font-family:system-ui,sans-serif; border-radius:2px;">Itinéraire</span>
+        </div>
+      </div>
+      <!-- Split layout -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:center;">
+        <div>
+          <div style="color:#9c6e3c; font-size:9px; letter-spacing:4px; font-family:system-ui,sans-serif; margin-bottom:10px; text-transform:uppercase;">Artisan chocolatier · Lausanne</div>
+          <div style="color:#2a1508; font-size:22px; line-height:1.25; margin-bottom:10px;">Chaque chocolat<br>raconte une<br>histoire</div>
+          <div style="color:#5a3d25; font-size:11px; line-height:1.6; font-family:system-ui,sans-serif; margin-bottom:14px;">Confectionnés à la main. Grands crus,<br>créations de saison, en boutique à Lausanne.</div>
+          <div style="display:flex; gap:8px;">
+            <span style="background:#3d1f0c; color:#faf6f0; padding:6px 14px; font-size:10px; font-family:system-ui,sans-serif;">Itinéraire</span>
+            <span style="border:1px solid #3d1f0c; color:#3d1f0c; padding:6px 14px; font-size:10px; font-family:system-ui,sans-serif;">Sur mesure (48h)</span>
+          </div>
+        </div>
+        <div style="background:#d4b896; border-radius:4px; height:130px; display:flex; align-items:center; justify-content:center;">
+          <span style="color:#faf6f0; font-size:10px; font-family:system-ui,sans-serif; opacity:0.7;">Photo produit signature</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Split (texte gauche, photo droite)</h3>
+      <p>Texte éditorial à gauche, grande photo produit à droite. Équilibre texte/image, très lisible sur desktop. Classique et élégant.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="fullbleed" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(to bottom, #3d1f0ccc, #1a0a0488), #8b5c30; padding:20px; font-family:Georgia,serif; min-height:220px; display:flex; flex-direction:column; justify-content:space-between; position:relative;">
+      <!-- Nav -->
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span style="color:#faf6f0; font-size:13px; letter-spacing:3px; font-family:system-ui,sans-serif; text-transform:uppercase;">Bugnon</span>
+        <div style="display:flex; gap:16px; align-items:center;">
+          <span style="color:#faf6f0bb; font-size:10px; font-family:system-ui,sans-serif;">Produits</span>
+          <span style="color:#faf6f0bb; font-size:10px; font-family:system-ui,sans-serif;">Sur mesure</span>
+          <span style="border:1px solid #faf6f066; color:#faf6f0; padding:3px 10px; font-size:10px; font-family:system-ui,sans-serif;">Itinéraire</span>
+        </div>
+      </div>
+      <!-- Centered text over image -->
+      <div style="text-align:center; padding: 10px 0;">
+        <div style="color:#e8c98a; font-size:9px; letter-spacing:4px; font-family:system-ui,sans-serif; margin-bottom:10px; text-transform:uppercase;">Artisan chocolatier · Lausanne · Depuis 2014</div>
+        <div style="color:#faf6f0; font-size:26px; line-height:1.2; margin-bottom:10px; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">Chaque chocolat<br>raconte une histoire</div>
+        <div style="color:#faf6f0cc; font-size:11px; font-family:system-ui,sans-serif; margin-bottom:14px;">Créations artisanales à la main. Grands crus.</div>
+        <div style="display:flex; gap:8px; justify-content:center;">
+          <span style="background:#e8c98a; color:#2a1508; padding:6px 16px; font-size:10px; font-family:system-ui,sans-serif;">Itinéraire</span>
+          <span style="border:1px solid #faf6f066; color:#faf6f0; padding:6px 16px; font-size:10px; font-family:system-ui,sans-serif;">Sur mesure (48h)</span>
+        </div>
+      </div>
+      <div style="color:#faf6f055; font-size:9px; font-family:system-ui,sans-serif; text-align:center; letter-spacing:2px;">Rue du Bugnon 10 · 1005 Lausanne</div>
+    </div>
+    <div class="card-body">
+      <h3>B — Plein écran avec photo</h3>
+      <p>Photo plein écran avec overlay sombre, texte centré en blanc. Très immersif et impact fort. La photo travaille pour la marque dès la première seconde.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="editorial" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#faf6f0; padding:20px; font-family:Georgia,serif; min-height:220px;">
+      <!-- Nav -->
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <span style="color:#3d1f0c; font-size:13px; letter-spacing:3px; font-family:system-ui,sans-serif; text-transform:uppercase;">Bugnon</span>
+        <div style="display:flex; gap:16px;">
+          <span style="color:#7a5c3c; font-size:10px; font-family:system-ui,sans-serif;">Produits</span>
+          <span style="color:#7a5c3c; font-size:10px; font-family:system-ui,sans-serif;">Sur mesure</span>
+          <span style="background:#3d1f0c; color:#faf6f0; padding:3px 10px; font-size:10px; font-family:system-ui,sans-serif; border-radius:2px;">Itinéraire</span>
+        </div>
+      </div>
+      <!-- Editorial: very large type + small photo below -->
+      <div style="border-top: 2px solid #9c6e3c; padding-top:14px; margin-bottom:14px;">
+        <div style="color:#9c6e3c; font-size:9px; letter-spacing:5px; font-family:system-ui,sans-serif; margin-bottom:8px; text-transform:uppercase;">Chocolatier artisan · Lausanne</div>
+        <div style="color:#2a1508; font-size:30px; line-height:1.05; margin-bottom:10px; letter-spacing:-0.5px;">Chaque chocolat<br><em style="color:#9c6e3c;">raconte</em><br>une histoire</div>
+      </div>
+      <div style="display:grid; grid-template-columns:2fr 1fr; gap:12px; align-items:end;">
+        <div>
+          <div style="color:#5a3d25; font-size:11px; line-height:1.6; font-family:system-ui,sans-serif; margin-bottom:12px;">Confectionnés à la main à Lausanne.<br>Grands crus, créations de saison,<br>dégustations en boutique.</div>
+          <div style="display:flex; gap:8px;">
+            <span style="background:#3d1f0c; color:#faf6f0; padding:6px 14px; font-size:10px; font-family:system-ui,sans-serif;">Itinéraire</span>
+            <span style="border:1px solid #9c6e3c; color:#9c6e3c; padding:6px 14px; font-size:10px; font-family:system-ui,sans-serif;">Sur mesure</span>
+          </div>
+        </div>
+        <div style="background:#d4b896; border-radius:3px; height:70px; display:flex; align-items:center; justify-content:center;">
+          <span style="color:#faf6f0; font-size:9px; font-family:system-ui,sans-serif; opacity:0.7;">Photo</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Éditorial typographique</h3>
+      <p>Très grand titre serif qui domine la page, petite photo secondaire. Style journal gastronomique. La typographie est le héros visuel — pas besoin d'une grande photo.</p>
+    </div>
+  </div>
+
+</div>
