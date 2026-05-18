@@ -1,0 +1,12 @@
+# Chocolaterie du Bugnon — shared Supabase project (prefix: chocobugnon-)
+#
+# Secrets (Dashboard or CLI):
+#   chocobugnon-resend-api-key     — Resend API key
+#   chocobugnon-company-email      — business inbox + reply-to on client confirmation emails
+#   chocobugnon-site-url           — optional public site URL for logo/links in emails
+#
+# FROM is hardcoded: noreply@mgt-solutions.com (verified domain in Resend).
+
+[functions.chocobugnon-contact]
+# Required when the site uses a Publishable key (sb_publishable_...) in the browser.
+verify_jwt = false

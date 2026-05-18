@@ -317,6 +317,18 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(156,110,60,0.12);
 }
+.form-hint {
+  font-weight: 400;
+  color: var(--text2);
+}
+.form-status {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+}
+.form-status--success { color: #2d6a3e; }
+.form-status--error { color: #8b2e2e; }
 
 /* ===== ÉVÉNEMENTS ===== */
 .evenements__inner {
