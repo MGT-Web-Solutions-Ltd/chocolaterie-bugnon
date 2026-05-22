@@ -249,36 +249,6 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   color: var(--text2); line-height: 1.65;
 }
 
-/* ===== PRODUITS ===== */
-.produits__grid {
-  display: grid; grid-template-columns: repeat(5, 1fr);
-  gap: 1rem; list-style: none;
-}
-.produits__tile {
-  display: flex; flex-direction: column; gap: 0.6rem;
-  cursor: pointer;
-}
-.produits__img-wrap {
-  overflow: hidden; border-radius: var(--radius);
-  aspect-ratio: 1 / 1;
-}
-.produits__img {
-  width: 100%; height: 100%; object-fit: cover;
-  transition: transform 0.35s ease;
-}
-.produits__tile:hover .produits__img { transform: scale(1.05); }
-.produits__label {
-  font-family: var(--font-sans); font-size: 0.82rem;
-  font-weight: 600; color: var(--text);
-  text-align: center; letter-spacing: 0.02em;
-  transition: color 0.2s;
-}
-.produits__tile:hover .produits__label { color: var(--accent); }
-.produits__tile--saison .produits__label { color: var(--accent); }
-.produits__tile--saison .produits__img-wrap {
-  outline: 2px solid var(--accent); outline-offset: 3px;
-}
-
 /* ===== CAMPAGNE SAISONNIÈRE ===== */
 .campagne__inner {
   display: grid; grid-template-columns: 1fr 1fr;
@@ -635,7 +605,6 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   .valeurs__list { grid-template-columns: 1fr; }
 
   /* Produits */
-  .produits__grid { grid-template-columns: repeat(2, 1fr); }
 
   /* Campagne */
   .campagne__inner {
@@ -722,11 +691,6 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   .campagne__text  { order: 1; }
 }
 
-/* Produits last tile full-width on 2-col mobile grid */
-@media (max-width: 980px) {
-  .produits__tile:last-child { grid-column: span 2; max-width: 200px; margin: 0 auto; }
-}
-
 /* ===== ÉVÉNEMENTS — reduced weight ===== */
 .evenements { padding: 2.5rem 0; }
 .evenements h2 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
@@ -778,18 +742,27 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 .produit-tile__overlay {
   position: absolute;
   inset: 0;
-  background: oklch(25% 0.04 48 / 0);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.35s ease-out;
 }
 
-.produit-tile:hover .produit-tile__overlay {
+.produit-tile__overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: oklch(25% 0.04 48 / 0.42);
+  opacity: 0;
+  transition: opacity 0.35s ease-out;
+}
+
+.produit-tile:hover .produit-tile__overlay::before {
+  opacity: 1;
 }
 
 .produit-tile__overlay-label {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 500;
