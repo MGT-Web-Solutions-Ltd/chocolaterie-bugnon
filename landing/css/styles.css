@@ -653,3 +653,8 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 @media (max-width: 980px) {
   .produits__tile:last-child { grid-column: span 2; max-width: 200px; margin: 0 auto; }
 }
+
+/* ===== ÉVÉNEMENTS — reduced weight ===== */
+.evenements { padding: 2.5rem 0; }
+.evenements h2 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
+.evenements__img { height: 220px; }
