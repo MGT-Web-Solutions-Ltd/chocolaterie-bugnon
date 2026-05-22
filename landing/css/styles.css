@@ -43,7 +43,29 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 /* ===== LAYOUT HELPERS ===== */
 .container { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
 .section { padding: 5rem 0; }
-.section--dark { background: var(--bg-dark); color: var(--cta-text); }
+.section--dark {
+  position: relative;
+  isolation: isolate;
+  color: var(--cta-text);
+  background-color: var(--bg-dark);
+  background-image: url('../images/granulated_brown.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section--dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-dark);
+  opacity: 0.82;
+  pointer-events: none;
+  z-index: 0;
+}
+.section--dark > * {
+  position: relative;
+  z-index: 1;
+}
 .section--alt  { background: var(--bg2); }
 
 /* ===== DECORATIVE RULE ===== */
@@ -429,8 +451,50 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 
 /* ===== FOOTER ===== */
 .footer {
-  background: var(--bg-footer);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--cta-text);
   padding: 2.75rem 0 0;
+}
+.footer__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.footer__bg-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+.footer__bg-cell {
+  overflow: hidden;
+  min-height: 0;
+}
+.footer__bg-cell img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.footer__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    oklch(22% 0.04 48 / 0.55),
+    oklch(28% 0.05 48 / 0.92)
+  );
+  pointer-events: none;
+}
+.footer__inner {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 4px oklch(18% 0.03 48 / 0.9);
 }
 .footer__grid {
   display: flex;
@@ -438,7 +502,7 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   align-items: flex-start;
   gap: 3rem 4.5rem;
   padding-bottom: 1.75rem;
-  border-bottom: 1px solid oklch(97% 0.012 55 / 0.08);
+  border-bottom: 1px solid oklch(97% 0.012 55 / 0.22);
 }
 .footer__brand-logo {
   display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;
@@ -449,34 +513,37 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 }
 .footer__name {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.65rem; font-style: italic; color: var(--cta-text);
+  font-size: 1.65rem; font-style: italic; font-weight: 600;
+  color: var(--cta-text);
 }
 .footer__address {
-  font-family: var(--font-sans); font-size: 0.82rem;
-  color: oklch(97% 0.012 55 / 0.6); line-height: 1.75; font-style: normal;
+  font-family: var(--font-sans); font-size: 0.85rem; font-weight: 500;
+  color: oklch(97% 0.012 55 / 0.92); line-height: 1.75; font-style: normal;
   margin-bottom: 0.9rem;
 }
-.footer__address a { color: oklch(97% 0.012 55 / 0.6); }
-.footer__address a:hover { color: var(--cta-text); }
+.footer__address a { color: oklch(97% 0.012 55 / 0.92); }
+.footer__address a:hover { color: #fff; }
 .footer__social { display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: flex-start; }
 .footer__social-link {
-  font-family: var(--font-sans); font-size: 0.75rem;
-  background: oklch(97% 0.012 55 / 0.08); border: 1px solid oklch(97% 0.012 55 / 0.15);
-  color: oklch(97% 0.012 55 / 0.7); padding: 0.3rem 0.8rem;
-  border-radius: 4px; transition: background 0.15s;
+  font-family: var(--font-sans); font-size: 0.75rem; font-weight: 500;
+  background: oklch(97% 0.012 55 / 0.14); border: 1px solid oklch(97% 0.012 55 / 0.35);
+  color: var(--cta-text); padding: 0.35rem 0.85rem;
+  border-radius: 4px; transition: background 0.15s, border-color 0.15s;
 }
-.footer__social-link:hover { background: oklch(97% 0.012 55 / 0.15); color: var(--cta-text); }
+.footer__social-link:hover {
+  background: oklch(97% 0.012 55 / 0.22); border-color: oklch(97% 0.012 55 / 0.5); color: #fff;
+}
 .footer__nav-title {
-  font-family: var(--font-sans); font-size: 0.7rem;
+  font-family: var(--font-sans); font-size: 0.7rem; font-weight: 600;
   letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--accent-gold); margin-bottom: 1rem;
 }
 .footer__nav ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
 .footer__nav a {
-  font-family: var(--font-sans); font-size: 0.88rem;
-  color: oklch(97% 0.012 55 / 0.65); transition: color 0.15s;
+  font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500;
+  color: oklch(97% 0.012 55 / 0.92); transition: color 0.15s;
 }
-.footer__nav a:hover { color: var(--cta-text); }
+.footer__nav a:hover { color: #fff; }
 .footer__newsletter-sub {
   font-family: var(--font-sans); font-size: 0.82rem;
   color: oklch(97% 0.012 55 / 0.6); margin-bottom: 1rem;
@@ -506,10 +573,11 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   justify-content: center;
   gap: 0.35rem 0.5rem;
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  color: oklch(97% 0.012 55 / 0.45);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: oklch(97% 0.012 55 / 0.78);
 }
-.footer__legal-dot { color: oklch(97% 0.012 55 / 0.25); }
+.footer__legal-dot { color: oklch(97% 0.012 55 / 0.45); }
 .footer__credit-link {
   display: inline-flex;
   align-items: center;
@@ -517,14 +585,15 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   flex-wrap: wrap;
   gap: 0.4rem 0.55rem;
   font-family: var(--font-sans);
-  font-size: 0.62rem;
+  font-size: 0.65rem;
+  font-weight: 500;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: oklch(97% 0.012 55 / 0.4);
+  color: oklch(97% 0.012 55 / 0.72);
   transition: color 0.15s;
 }
 .footer__credit-link:hover {
-  color: oklch(97% 0.012 55 / 0.75);
+  color: #fff;
 }
 
 /* ===== MOBILE NAV OPEN STATE ===== */
@@ -600,6 +669,10 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 
   /* Footer */
   .footer { padding-top: 2.25rem; }
+  .footer__bg-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
   .footer__grid {
     flex-direction: column;
     align-items: center;
@@ -658,3 +731,117 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 .evenements { padding: 2.5rem 0; }
 .evenements h2 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 .evenements__img { height: 220px; }
+
+/* ===== PRODUITS — EDITORIAL GALLERY ===== */
+.produit-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 2rem;
+}
+
+.produit-cat {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.produit-cat__header {
+  max-width: 600px;
+}
+
+.produit-cat--right .produit-cat__header {
+  margin-left: auto;
+  text-align: right;
+}
+
+.produit-cat--right .rule {
+  margin-left: auto;
+}
+
+.produit-cat--right .produit-cat__desc {
+  margin-left: auto;
+}
+
+.produit-cat__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--text);
+  margin-top: 0.25rem;
+}
+
+.produit-cat__desc {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text2);
+  line-height: 1.7;
+  max-width: 52ch;
+  margin-top: 0.5rem;
+}
+
+.produit-cat--right .produit-cat__desc {
+  margin-left: auto;
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625rem;
+}
+
+.gallery__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  display: block;
+}
+
+.gallery__img:hover {
+  opacity: 0.88;
+  transform: scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CTA band */
+.produits__cta-band {
+  background: var(--bg-dark);
+  color: var(--cta-text);
+  padding: 5rem 1.5rem;
+}
+
+.produits__cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.produits__cta-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--cta-text);
+  line-height: 1.2;
+}
+
+.produits__cta-sub {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: oklch(97% 0.012 55 / 0.65);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
