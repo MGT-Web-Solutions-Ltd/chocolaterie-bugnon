@@ -25,60 +25,58 @@
   });
 })();
 
-// ===== GALLERY IMAGE CONFIG =====
-var GALLERY_IMAGES = {
-  chocolats: [
-    'images/new_images/chocolat/c1.jpg',
-    'images/new_images/chocolat/c2.jpg',
-    'images/new_images/chocolat/c3.jpg',
-    'images/new_images/chocolat/c4.jpg',
-    'images/new_images/chocolat/c5.jpg',
-    'images/new_images/chocolat/c6.jpg',
-    'images/new_images/chocolat/c7.jpg',
-    'images/new_images/chocolat/c8.jpg',
-    'images/new_images/chocolat/1000004848.jpg'
-  ],
-  confiseries: [
-    'images/new_images/confisserie/co1.jpg',
-    'images/new_images/confisserie/co2.jpg',
-    'images/new_images/confisserie/co3.jpg',
-    'images/new_images/confisserie/co4.jpg',
-    'images/new_images/confisserie/boite-20-pces.jpg',
-    'images/new_images/confisserie/boite-chocolats.jpg'
-  ],
-  'glaces-sorbets': [
-    'images/new_images/glace_Et_sorbet/g1.jpg',
-    'images/new_images/glace_Et_sorbet/g2.jpg',
-    'images/new_images/glace_Et_sorbet/g3.jpg',
-    'images/new_images/glace_Et_sorbet/g4.jpg',
-    'images/new_images/glace_Et_sorbet/g5.jpg',
-    'images/new_images/glace_Et_sorbet/g6.jpg',
-    'images/new_images/glace_Et_sorbet/g7.jpg'
-  ],
-  saison: [
-    'images/new_images/season/s1.jpg',
-    'images/new_images/season/s2.jpg',
-    'images/new_images/season/s3.jpg',
-    'images/new_images/season/s4.jpg',
-    'images/new_images/season/s5.jpg',
-    'images/new_images/season/s6.jpg',
-    'images/new_images/season/s7.jpg',
-    'images/new_images/season/s8.jpg'
-  ],
-  art: [
-    'images/new_images/art/a1.jpg',
-    'images/new_images/art/a2.jpg',
-    'images/new_images/art/a3.jpg',
-    'images/new_images/art/a4.jpg',
-    'images/new_images/art/a5.jpg',
-    'images/new_images/art/a6.jpg',
-    'images/new_images/art/a7.jpg',
-    'images/new_images/art/a8.jpg'
-  ]
-};
-
-// ===== LIGHTBOX =====
 (function () {
+  var GALLERY_IMAGES = {
+    chocolats: [
+      'images/new_images/chocolat/c1.jpg',
+      'images/new_images/chocolat/c2.jpg',
+      'images/new_images/chocolat/c3.jpg',
+      'images/new_images/chocolat/c4.jpg',
+      'images/new_images/chocolat/c5.jpg',
+      'images/new_images/chocolat/c6.jpg',
+      'images/new_images/chocolat/c7.jpg',
+      'images/new_images/chocolat/c8.jpg',
+      'images/new_images/chocolat/1000004848.jpg'
+    ],
+    confiseries: [
+      'images/new_images/confisserie/co1.jpg',
+      'images/new_images/confisserie/co2.jpg',
+      'images/new_images/confisserie/co3.jpg',
+      'images/new_images/confisserie/co4.jpg',
+      'images/new_images/confisserie/boite-20-pces.jpg',
+      'images/new_images/confisserie/boite-chocolats.jpg'
+    ],
+    'glaces-sorbets': [
+      'images/new_images/glace_Et_sorbet/g1.jpg',
+      'images/new_images/glace_Et_sorbet/g2.jpg',
+      'images/new_images/glace_Et_sorbet/g3.jpg',
+      'images/new_images/glace_Et_sorbet/g4.jpg',
+      'images/new_images/glace_Et_sorbet/g5.jpg',
+      'images/new_images/glace_Et_sorbet/g6.jpg',
+      'images/new_images/glace_Et_sorbet/g7.jpg'
+    ],
+    saison: [
+      'images/new_images/season/s1.jpg',
+      'images/new_images/season/s2.jpg',
+      'images/new_images/season/s3.jpg',
+      'images/new_images/season/s4.jpg',
+      'images/new_images/season/s5.jpg',
+      'images/new_images/season/s6.jpg',
+      'images/new_images/season/s7.jpg',
+      'images/new_images/season/s8.jpg'
+    ],
+    art: [
+      'images/new_images/art/a1.jpg',
+      'images/new_images/art/a2.jpg',
+      'images/new_images/art/a3.jpg',
+      'images/new_images/art/a4.jpg',
+      'images/new_images/art/a5.jpg',
+      'images/new_images/art/a6.jpg',
+      'images/new_images/art/a7.jpg',
+      'images/new_images/art/a8.jpg'
+    ]
+  };
+
   var lightbox = {
     overlay: null,
     img: null,
