@@ -82,7 +82,7 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 .btn:hover { opacity: 0.85; transform: translateY(-1px); }
 .btn--primary   { background: var(--cta); color: var(--cta-text); border-color: var(--cta); }
 .btn--outline   { background: transparent; color: var(--accent); border-color: var(--accent); }
-.btn--outline-light { background: transparent; color: var(--cta-text); border-color: rgba(250,246,240,0.4); }
+.btn--outline-light { background: transparent; color: var(--cta-text); border-color: oklch(97% 0.012 55 / 0.4); }
 .btn--gold      { background: var(--accent-gold); color: var(--text); border-color: var(--accent-gold); }
 
 /* ===== ACCESSIBILITY ===== */
@@ -419,7 +419,7 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   text-align: center;
   color: var(--accent);
   background: var(--bg);
-  border-top: 1px solid rgba(61, 31, 12, 0.08);
+  border-top: 1px solid oklch(25% 0.04 48 / 0.08);
   transition: color 0.15s, background 0.15s;
 }
 .acces__map-open:hover {
@@ -453,19 +453,19 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 }
 .footer__address {
   font-family: var(--font-sans); font-size: 0.82rem;
-  color: rgba(250,246,240,0.6); line-height: 1.75; font-style: normal;
+  color: oklch(97% 0.012 55 / 0.6); line-height: 1.75; font-style: normal;
   margin-bottom: 0.9rem;
 }
-.footer__address a { color: rgba(250,246,240,0.6); }
+.footer__address a { color: oklch(97% 0.012 55 / 0.6); }
 .footer__address a:hover { color: var(--cta-text); }
 .footer__social { display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: flex-start; }
 .footer__social-link {
   font-family: var(--font-sans); font-size: 0.75rem;
-  background: oklch(97% 0.012 55 / 0.08); border: 1px solid rgba(250,246,240,0.15);
-  color: rgba(250,246,240,0.7); padding: 0.3rem 0.8rem;
+  background: oklch(97% 0.012 55 / 0.08); border: 1px solid oklch(97% 0.012 55 / 0.15);
+  color: oklch(97% 0.012 55 / 0.7); padding: 0.3rem 0.8rem;
   border-radius: 4px; transition: background 0.15s;
 }
-.footer__social-link:hover { background: rgba(250,246,240,0.15); color: var(--cta-text); }
+.footer__social-link:hover { background: oklch(97% 0.012 55 / 0.15); color: var(--cta-text); }
 .footer__nav-title {
   font-family: var(--font-sans); font-size: 0.7rem;
   letter-spacing: 0.2em; text-transform: uppercase;
@@ -474,21 +474,21 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
 .footer__nav ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
 .footer__nav a {
   font-family: var(--font-sans); font-size: 0.88rem;
-  color: rgba(250,246,240,0.65); transition: color 0.15s;
+  color: oklch(97% 0.012 55 / 0.65); transition: color 0.15s;
 }
 .footer__nav a:hover { color: var(--cta-text); }
 .footer__newsletter-sub {
   font-family: var(--font-sans); font-size: 0.82rem;
-  color: rgba(250,246,240,0.6); margin-bottom: 1rem;
+  color: oklch(97% 0.012 55 / 0.6); margin-bottom: 1rem;
 }
 .footer__form { display: flex; flex-direction: column; gap: 0.6rem; }
 .footer__input {
   font-family: var(--font-sans); font-size: 0.88rem;
-  background: rgba(250,246,240,0.07); border: 1px solid rgba(250,246,240,0.15);
+  background: oklch(97% 0.012 55 / 0.07); border: 1px solid oklch(97% 0.012 55 / 0.15);
   color: var(--cta-text); border-radius: var(--radius); padding: 0.6rem 0.9rem;
   outline: none; transition: border-color 0.15s;
 }
-.footer__input::placeholder { color: rgba(250,246,240,0.35); }
+.footer__input::placeholder { color: oklch(97% 0.012 55 / 0.35); }
 .footer__input:focus { border-color: var(--accent-gold); }
 .footer__submit { width: 100%; }
 .footer__legal {
@@ -507,9 +507,9 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   gap: 0.35rem 0.5rem;
   font-family: var(--font-sans);
   font-size: 0.72rem;
-  color: rgba(250,246,240,0.45);
+  color: oklch(97% 0.012 55 / 0.45);
 }
-.footer__legal-dot { color: rgba(250,246,240,0.25); }
+.footer__legal-dot { color: oklch(97% 0.012 55 / 0.25); }
 .footer__credit-link {
   display: inline-flex;
   align-items: center;
@@ -520,7 +520,7 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   font-size: 0.62rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: rgba(250,246,240,0.4);
+  color: oklch(97% 0.012 55 / 0.4);
   transition: color 0.15s;
 }
 .footer__credit-link:hover {
