@@ -327,8 +327,8 @@ h3 { font-size: 1.15rem; font-style: normal; font-weight: 600; }
   line-height: 1.5;
   margin-top: 0.75rem;
 }
-.form-status--success { color: #2d6a3e; }
-.form-status--error { color: #8b2e2e; }
+.form-status--success { color: oklch(42% 0.12 145); }
+.form-status--error { color: oklch(38% 0.1 25); }
 
 /* ===== ÉVÉNEMENTS ===== */
 .evenements__inner {
