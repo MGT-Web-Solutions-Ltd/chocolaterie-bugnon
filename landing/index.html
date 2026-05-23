@@ -4,7 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chocolaterie du Bugnon — Artisan chocolatier à Lausanne</title>
-  <meta name="description" content="Chocolaterie artisanale à Lausanne depuis 2014. Chocolats grands crus, confiseries, glaces & sorbets, commandes sur mesure en 48h.">
+  <meta name="description" content="Chocolaterie artisanale à Lausanne depuis 2014. Chocolats Grands Crus, confiseries, glaces et sorbets faits main. Rue du Bugnon 10 — commandes sur mesure en 48h.">
+  <link rel="canonical" href="https://chocolateriedubugnon.ch/">
+
+  <!-- Open Graph / WhatsApp link preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chocolaterie du Bugnon">
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:url" content="https://chocolateriedubugnon.ch/">
+  <meta property="og:title" content="Chocolaterie du Bugnon — Chocolat artisanal à Lausanne">
+  <meta property="og:description" content="Installée à Lausanne depuis 2014. Créations chocolatées Grands Crus, confiseries, glaces et sorbets 100 % plein fruits, confectionnés à la main par Benoît Machard. Boutique Rue du Bugnon 10.">
+  <meta property="og:image" content="https://chocolateriedubugnon.ch/assets/og-share.jpg">
+  <meta property="og:image:secure_url" content="https://chocolateriedubugnon.ch/assets/og-share.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo Chocolaterie du Bugnon — chocolats artisanaux à Lausanne">
+
+  <!-- Twitter / X (also used by some messengers) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chocolaterie du Bugnon — Chocolat artisanal à Lausanne">
+  <meta name="twitter:description" content="Chocolats Grands Crus, confiseries, glaces et sorbets faits main à Lausanne depuis 2014. Rue du Bugnon 10.">
+  <meta name="twitter:image" content="https://chocolateriedubugnon.ch/assets/og-share.jpg">
+
+  <link rel="icon" href="assets/bugnon-logo-user.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/bugnon-logo-user.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
@@ -28,7 +53,6 @@
         <ul class="nav__links" id="nav-links">
           <li><a href="#produits">Produits</a></li>
           <li><a href="#sur-mesure">Sur mesure</a></li>
-          <li><a href="#evenements">Événements</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="nav__cta-item"><a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="btn btn--primary nav__cta" target="_blank" rel="noopener">Itinéraire ↗</a></li>
         </ul>
@@ -41,22 +65,53 @@
 
   <main id="main">
 
-    <!-- HERO -->
-    <section class="hero section" id="accueil">
-      <div class="container hero__inner"><div class="hero__text">
-  <p class="section-eyebrow">Artisan chocolatier · Lausanne · Depuis 2014</p>
-  <h1>Chaque chocolat<br>raconte une histoire</h1>
-  <div class="rule"></div>
-  <p class="hero__sub">Confectionnés à la main à Lausanne. Grands crus, créations de saison, dégustations en boutique.</p>
-  <div class="hero__actions">
-    <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="btn btn--primary" target="_blank" rel="noopener">Itinéraire</a>
-    <a href="#sur-mesure" class="btn btn--outline">Sur mesure (48h)</a>
-  </div>
-  <p class="hero__address">Rue du Bugnon 10 · 1005 Lausanne</p>
-</div>
-<div class="hero__media">
-  <img src="images/image1.webp" alt="Chocolats artisanaux de la Chocolaterie du Bugnon" class="hero__img">
-</div></div>
+    <!-- HERO (structure inspirée de L'Origine) -->
+    <section class="hero" id="accueil" aria-label="Accueil">
+      <div class="hero__layout">
+        <div class="hero__panel hero__panel--media hero__panel--left" aria-hidden="true">
+          <img src="images/new_images/chocolat/1000004848.jpg" alt="" width="800" height="1000" loading="eager" decoding="async">
+        </div>
+        <div class="hero__panel hero__panel--center">
+          <a href="#" class="hero__brand" aria-label="Chocolaterie du Bugnon — accueil">
+            <img src="assets/bugnon-logo-user.png" alt="" class="hero__logo" width="112" height="112">
+          </a>
+          <h1 class="hero__title">
+            <span>LE GRAND CRU SUISSE</span>
+            
+          </h1>
+          <div class="hero__cta-wrap">
+            <a href="#produits" class="hero__cta">Découvrir nos produits</a>
+          </div>
+          <p class="hero__address">Rue du Bugnon 10 · 1005 Lausanne</p>
+        </div>
+        <div class="hero__panel hero__panel--media hero__panel--right" aria-hidden="true">
+          <img src="images/chocolats.jpg" alt="" width="800" height="1000" loading="eager" decoding="async">
+        </div>
+      </div>
+      <div class="hero__mobile-media">
+        <img src="images/chocolats.jpg" alt="Tablettes et chocolats artisanaux Chocolaterie du Bugnon" width="1200" height="800" loading="eager" decoding="async">
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="apropos section" id="apropos" aria-labelledby="apropos-title">
+      <div class="container apropos__inner">
+        <div class="apropos__media">
+          <img src="images/heart_chocolates.jpg" alt="Assortiment de chocolats artisanaux Bugnon" width="900" height="700" loading="lazy" decoding="async">
+        </div>
+        <div class="apropos__content">
+          <div class="apropos__eyebrow-row">
+            <p class="apropos__eyebrow">À propos</p>
+            <span class="apropos__eyebrow-line" aria-hidden="true"></span>
+          </div>
+          <h2 class="apropos__title" id="apropos-title">Des créations uniques pour tous les goûts</h2>
+          <div class="apropos__body">
+            <p>Installée à Lausanne depuis 2014, la Chocolaterie du Bugnon célèbre l'artisanat et l'originalité. Menée par le passionné Benoît Machard, notre boutique propose des créations chocolatées uniques élaborées exclusivement à partir de chocolats «&nbsp;Grands Crus&nbsp;» provenant de plus de dix pays, de pur beurre de cacao et de vanille de Madagascar.</p>
+            <p>Découvrez nos incontournables pavés fondants, pralinés et truffes, mais aussi nos clins d'œil originaux comme nos pastilles «&nbsp;pétillantes&nbsp;» inspirées du monde médical (proximité du CHUV).</p>
+            <p>Nous vous proposons également des confiseries, pâtes à tartiner, ainsi que des glaces et sorbets artisanaux 100&nbsp;% plein fruits.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- BANDEAU PREUVES -->
@@ -81,44 +136,40 @@
 </ul></div>
     </section>
 
-    <!-- VALEURS -->
-    <section class="valeurs section" id="valeurs">
-      <div class="container valeurs__inner"><div class="section-header section-header--center">
-  <p class="section-eyebrow">Notre philosophie</p>
-  <h2>L'artisan, le goût, l'émotion</h2>
-  <div class="rule rule--center"></div>
-  <p class="section-sub">Trois engagements au cœur de chaque création.</p>
-</div>
-<ul class="valeurs__list">
-  <li class="valeurs__card">
-    <span class="valeurs__icon" aria-hidden="true">✦</span>
-    <h3>Artisanat</h3>
-    <p>Chaque création façonnée à la main avec soin, dans notre atelier lausannois.</p>
-  </li>
-  <li class="valeurs__card">
-    <span class="valeurs__icon" aria-hidden="true">◈</span>
-    <h3>Qualité</h3>
-    <p>Grands crus sélectionnés, arômes francs et naturels.</p>
-  </li>
-  <li class="valeurs__card">
-    <span class="valeurs__icon" aria-hidden="true">♡</span>
-    <h3>Émotion</h3>
-    <p>Chaque chocolat est conçu pour créer un moment.</p>
-  </li>
-</ul></div>
-    </section>
-
     <!-- PRODUITS -->
     <section class="produits section section--alt" id="produits">
       <div class="container">
-        <div class="section-header section-header--center">
+        <div class="section-header section-header--center produits__intro">
           <p class="section-eyebrow">La boutique</p>
-          <h2>En Magasin</h2>
+          <h2>Découvrez nos produits en magasin</h2>
           <div class="rule rule--center"></div>
+          <p class="section-sub produits__intro-sub">Chocolats, confiseries, glaces et créations de saison, confectionnés à la main à Lausanne.</p>
+          <div class="produits__intro-actions">
+            <a href="#produits-catalog" class="btn btn--primary">Voir les produits</a>
+            <a href="#contact" class="btn btn--outline">Je me rends en boutique</a>
+          </div>
         </div>
       </div>
 
-      <div class="produit-grid">
+      <div class="produits__stage">
+        <div class="produits__marquee" aria-hidden="true">
+          <div class="produits__marquee-track">
+            <div class="produits__marquee-group">
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+            </div>
+            <div class="produits__marquee-group">
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+              <span class="produits__marquee-text">Chocolaterie du Bugnon</span>
+            </div>
+          </div>
+        </div>
+
+      <div class="produit-grid" id="produits-catalog">
 
         <div class="produit-tile" data-category="chocolats">
           <div class="produit-tile__img-wrap">
@@ -128,7 +179,7 @@
             </div>
           </div>
           <div class="produit-tile__info">
-            <h3 class="produit-tile__title">Chocolats grands crus</h3>
+            <h3 class="produit-tile__title"><span>Chocolats grands crus</span><span class="produit-tile__zoom" aria-hidden="true"><svg class="produit-tile__zoom-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span></h3>
             <p class="produit-tile__desc">Façonnés à la main dans notre atelier lausannois, à partir de crus sélectionnés aux quatre coins du monde.</p>
           </div>
         </div>
@@ -141,7 +192,7 @@
             </div>
           </div>
           <div class="produit-tile__info">
-            <h3 class="produit-tile__title">Confiseries &amp; gourmandises</h3>
+            <h3 class="produit-tile__title"><span>Confiseries &amp; gourmandises</span><span class="produit-tile__zoom" aria-hidden="true"><svg class="produit-tile__zoom-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span></h3>
             <p class="produit-tile__desc">Caramels fondants, nougats et pralinés maison — des douceurs qui éveillent les sens.</p>
           </div>
         </div>
@@ -154,7 +205,7 @@
             </div>
           </div>
           <div class="produit-tile__info">
-            <h3 class="produit-tile__title">Glaces &amp; sorbets</h3>
+            <h3 class="produit-tile__title"><span>Glaces &amp; sorbets</span><span class="produit-tile__zoom" aria-hidden="true"><svg class="produit-tile__zoom-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span></h3>
             <p class="produit-tile__desc">L'intensité du cacao et la fraîcheur des fruits, dans des recettes aux ingrédients naturels.</p>
           </div>
         </div>
@@ -167,7 +218,7 @@
             </div>
           </div>
           <div class="produit-tile__info">
-            <h3 class="produit-tile__title">Créations saisonnières</h3>
+            <h3 class="produit-tile__title"><span>Créations saisonnières</span><span class="produit-tile__zoom" aria-hidden="true"><svg class="produit-tile__zoom-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span></h3>
             <p class="produit-tile__desc">Pâques, Noël, fête des mères — chaque saison inspire une collection éphémère à ne pas manquer.</p>
           </div>
         </div>
@@ -180,37 +231,34 @@
             </div>
           </div>
           <div class="produit-tile__info">
-            <h3 class="produit-tile__title">Créations artistiques</h3>
+            <h3 class="produit-tile__title"><span>Créations artistiques</span><span class="produit-tile__zoom" aria-hidden="true"><svg class="produit-tile__zoom-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></span></h3>
             <p class="produit-tile__desc">Sculptures, pièces montées, œuvres sur mesure — quand le chocolat devient matière à expression.</p>
           </div>
         </div>
 
       </div><!-- /produit-grid -->
+      </div><!-- /produits__stage -->
     </section>
 
-    <!-- PRODUITS CTA BAND -->
-    <div class="produits__cta-band">
-      <div class="container produits__cta-inner">
-        <h2 class="produits__cta-title">Venez découvrir notre boutique</h2>
-        <p class="produits__cta-sub">Rue du Bugnon 10 · 1005 Lausanne · Lun–Ven 9h–18h30 · Sam 9h–17h</p>
-        <a href="#contact" class="btn btn--gold">Voir notre adresse</a>
+    <!-- CAMPAGNE SAISONNIÈRE / NOUVEAUTÉ -->
+    <section class="campagne section section--dark" id="saison" aria-labelledby="campagne-title">
+      <div class="container campagne__inner">
+        <div class="campagne__visual">
+          <div class="campagne__frame">
+            <img src="images/glaces2.jpg" alt="Glace et sorbet artisanaux — nouveauté été" class="campagne__img" width="900" height="1100" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="campagne__text">
+          <span class="campagne__badge">Nouveauté</span>
+          <p class="section-eyebrow section-eyebrow--gold campagne__eyebrow">Été 2026</p>
+          <h2 class="campagne__title" id="campagne-title">Fondez pour nos glaces</h2>
+          <div class="rule rule--gold campagne__rule"></div>
+          <p class="campagne__sub">Voyagez sous les tropiques avec l'intensité d'un grand cru de Grenade. Glaces et sorbets 100&nbsp;% plein fruits, confectionnés à la main en boutique.</p>
+          <div class="campagne__actions">
+            <a href="#contact" class="btn btn--outline-light btn--lg campagne__cta">Je me rends en boutique</a>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- CAMPAGNE SAISONNIÈRE -->
-    <section class="campagne section section--dark" id="saison">
-      <div class="container campagne__inner"><div class="campagne__visual">
-  <img src="images/glaces2.jpg" alt="Sorbets et glaces" class="campagne__img">
-</div>
-<div class="campagne__text">
-  <p class="section-eyebrow section-eyebrow--gold">ETE 2026</p>
-  <h2 style="color: var(--cta-text);">Fondez pour nos glaces</h2>
-  <div class="rule rule--gold"></div>
-  <p class="campagne__sub">Voyagez sous les tropiques avec l'intensité d'un grand cru de Grenade.</p>
-  <div class="campagne__actions">
-    <a href="#contact" class="btn btn--outline-light">Je me rends en boutique</a>
-  </div>
-</div></div>
     </section>
 
     <!-- SUR MESURE -->
@@ -224,8 +272,8 @@
     <li><span aria-hidden="true">◉</span> Cadeau d'entreprise</li>
     <li><span aria-hidden="true">◉</span> Anniversaire &amp; mariage</li>
     <li><span aria-hidden="true">◉</span> Cadeau personnalisé</li>
+    <li><span aria-hidden="true">◉</span> Fontaine chocolat (événements)</li>
   </ul>
-  <a href="#sur-mesure-form" class="btn btn--primary">Faire une demande</a>
 </div>
 <div class="sur-mesure__form-wrap" id="sur-mesure-form">
   <form class="sur-mesure__form" name="sur-mesure" method="POST" novalidate>
@@ -246,34 +294,24 @@
         <option value="anniversaire">Anniversaire</option>
         <option value="mariage">Mariage</option>
         <option value="cadeau">Cadeau personnel</option>
+        <option value="fontaine">Fontaine chocolat (événement)</option>
         <option value="autre">Autre</option>
       </select>
     </div>
+    <div class="form-fontaine-details" id="sm-fontaine-details" hidden>
+      <p class="form-fontaine-details__intro">Mariages, soirées d'entreprise, anniversaires. Nous livrons et installons notre fontaine chocolat pour un moment inoubliable.</p>
+      <ul class="form-fontaine-details__specs">
+        <li><span class="spec-tag">80 cm de hauteur</span></li>
+        <li><span class="spec-tag">150 CHF / jour</span></li>
+        <li><span class="spec-tag">Caution 600 CHF</span></li>
+      </ul>
+    </div>
     <div class="form-group">
       <label for="sm-message">Votre demande</label>
-      <textarea id="sm-message" name="message" rows="4" placeholder="Décrivez votre idée, la quantité souhaitée, la date..." required></textarea>
+      <textarea id="sm-message" name="message" rows="4" placeholder="Décrivez votre idée, la quantité souhaitée, la date de l'événement…" required></textarea>
     </div>
     <button type="submit" class="btn btn--primary" style="width:100%;">Envoyer ma demande</button>
   </form>
-</div></div>
-    </section>
-
-    <!-- ÉVÉNEMENTS -->
-    <section class="evenements section section--alt" id="evenements">
-      <div class="container evenements__inner"><div class="evenements__text">
-  <p class="section-eyebrow">Réceptions &amp; entreprises</p>
-  <h2>La fontaine chocolat<br>pour vos événements</h2>
-  <div class="rule"></div>
-  <p class="evenements__sub">Mariages, soirées d'entreprise, anniversaires. Nous livrons et installons notre fontaine chocolat de 80 cm pour un moment inoubliable.</p>
-  <ul class="evenements__specs">
-    <li><span class="spec-tag">80 cm de hauteur</span></li>
-    <li><span class="spec-tag">150 CHF / jour</span></li>
-    <li><span class="spec-tag">Caution 600 CHF</span></li>
-  </ul>
-  <a href="#sur-mesure" class="btn btn--outline">Demander un devis</a>
-</div>
-<div class="evenements__media">
-  <img src="images/new_images/fontaine.jpg" alt="Fontaine chocolat Chocolaterie du Bugnon" class="evenements__img">
 </div></div>
     </section>
 
@@ -354,22 +392,22 @@
   <footer class="footer" id="footer">
     <div class="footer__bg" aria-hidden="true">
       <div class="footer__bg-grid">
-        <div class="footer__bg-cell"><img src="images/new_images/confisserie/boite-20-pces.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/confisserie/boite-chocolats.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/confisserie/boite-20-pces.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/confisserie/co1.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/confisserie/co2.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/confisserie/co3.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/confisserie/co4.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/chocolat/c1.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/chocolat/c2.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/chocolat/c3.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/chocolat/c4.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/season/s1.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/season/s2.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/season/s3.jpg" alt=""></div>
         <div class="footer__bg-cell"><img src="images/new_images/season/s4.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/season/s5.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/season/s6.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/season/s7.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/season/s8.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/glace_Et_sorbet/g1.jpg" alt=""></div>
-        <div class="footer__bg-cell"><img src="images/new_images/glace_Et_sorbet/g2.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/glace_Et_sorbet/g3.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/glace_Et_sorbet/g5.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/art/a2.jpg" alt=""></div>
+        <div class="footer__bg-cell"><img src="images/new_images/art/a6.jpg" alt=""></div>
       </div>
     </div>
     <div class="container footer__inner"><div class="footer__grid">
@@ -394,7 +432,6 @@
     <ul>
       <li><a href="#produits">Produits</a></li>
       <li><a href="#sur-mesure">Sur mesure</a></li>
-      <li><a href="#evenements">Événements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>

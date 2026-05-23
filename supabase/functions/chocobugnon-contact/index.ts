@@ -32,6 +32,7 @@ const TYPE_LABELS: Record<string, string> = {
   anniversaire: "Anniversaire",
   mariage: "Mariage",
   cadeau: "Cadeau personnel",
+  fontaine: "Fontaine chocolat (événement)",
   autre: "Autre",
 };
 

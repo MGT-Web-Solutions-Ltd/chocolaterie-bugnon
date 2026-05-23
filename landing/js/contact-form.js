@@ -49,6 +49,20 @@
 
   const EMAIL_RE = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
 
+  const typeSelect = form.querySelector("#sm-type");
+  const fontaineDetails = form.querySelector("#sm-fontaine-details");
+
+  function updateFontaineDetails() {
+    if (!typeSelect || !fontaineDetails) return;
+    const show = typeSelect.value === "fontaine";
+    fontaineDetails.hidden = !show;
+  }
+
+  if (typeSelect) {
+    typeSelect.addEventListener("change", updateFontaineDetails);
+    updateFontaineDetails();
+  }
+
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
     setStatus("", "");
