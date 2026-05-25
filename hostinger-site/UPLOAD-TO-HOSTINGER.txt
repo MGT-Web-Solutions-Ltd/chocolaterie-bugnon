@@ -1,0 +1,19 @@
+═══════════════════════════════════════════════════════════════
+  CHOCOLATERIE DU BUGNON — MISE EN LIGNE HOSTINGER
+═══════════════════════════════════════════════════════════════
+
+ÉTAPES
+──────
+1. Sélectionnez TOUT dans ce dossier (Cmd+A / Ctrl+A)
+2. Hostinger → Fichiers → public_html → Téléverser
+3. Vérifiez : public_html/index.html existe (pas public_html/hostinger-site/)
+
+APRÈS L’UPLOAD
+──────────────
+1. hPanel → SSL → Force HTTPS : ON
+2. https://VOTRE-DOMAINE/check-deploy.html → tout en OK
+3. Supprimer check-deploy.html
+4. Téléphone : onglet privé
+
+Regénérer ce dossier après modification du site :
+  ./landing/build-for-hostinger.sh

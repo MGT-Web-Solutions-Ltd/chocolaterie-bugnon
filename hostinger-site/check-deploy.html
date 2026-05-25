@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test déploiement Bugnon</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; max-width: 40rem; }
+    .ok { color: #0a7; }
+    .fail { color: #c00; font-weight: bold; }
+    li { margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Vérification des fichiers sur le serveur</h1>
+  <p>Ouvrez cette page une fois : <strong>/check-deploy.html</strong> puis supprimez-la.</p>
+  <ul id="list"></ul>
+  <script>
+    var files = [
+      "css/styles.css",
+      "js/main.js",
+      "js/chocobugnon-config.js",
+      "assets/bugnon-logo.svg",
+      "assets/og-share.jpg",
+      "images/granulated_brown.png",
+      "images/chocolats.jpg",
+      "images/new_images/chocolat/c1.jpg",
+      "images/new_images/confisserie/co1.jpg",
+      "images/new_images/glace_Et_sorbet/g1.jpg",
+      "images/new_images/season/s1.jpg",
+      "images/new_images/art/a1.jpg"
+    ];
+    var ul = document.getElementById("list");
+    files.forEach(function (path) {
+      var li = document.createElement("li");
+      li.textContent = "… " + path;
+      ul.appendChild(li);
+      fetch(path, { method: "HEAD" })
+        .then(function (r) {
+          li.className = r.ok ? "ok" : "fail";
+          li.textContent = (r.ok ? "OK " : "MANQUANT (" + r.status + ") ") + path;
+        })
+        .catch(function () {
+          li.className = "fail";
+          li.textContent = "ERREUR " + path;
+        });
+    });
+  </script>
+</body>
+</html>
