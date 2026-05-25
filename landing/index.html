@@ -27,8 +27,8 @@
   <meta name="twitter:description" content="Chocolats Grands Crus, confiseries, glaces et sorbets faits main à Lausanne depuis 2014. Rue du Bugnon 10.">
   <meta name="twitter:image" content="https://chocolateriedubugnon.ch/assets/og-share.jpg">
 
-  <link rel="icon" href="assets/bugnon-logo-user.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/bugnon-logo-user.png">
+  <link rel="icon" href="assets/bugnon-logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/bugnon-logo.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,19 +42,52 @@
   <!-- NAVIGATION -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
+      <ul class="nav__socials" aria-label="Réseaux sociaux">
+        <li>
+          <a href="https://www.facebook.com/ChocolaterieDuBugnon?utm_source=website&amp;utm_medium=social&amp;utm_campaign=navbar&amp;utm_content=facebook" class="nav__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=navbar&amp;utm_content=instagram" class="nav__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=navbar&amp;utm_content=pinterest" class="nav__social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.619 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+        </li>
+      </ul>
       <a href="#" class="nav__brand" aria-label="Chocolaterie du Bugnon — accueil">
-        <img src="assets/bugnon-logo-user.png" alt="" class="nav__logo" width="36" height="36">
-        <div class="nav__wordmark">
-          <span class="nav__name">Bugnon</span>
-          <span class="nav__tagline">Chocolatier artisan</span>
-        </div>
+        <img src="assets/bugnon-logo.svg" alt="" class="nav__logo" width="48" height="52">
+        <span class="nav__title">Chocolaterie du Bugnon</span>
       </a>
       <nav aria-label="Navigation principale">
         <ul class="nav__links" id="nav-links">
           <li><a href="#produits">Produits</a></li>
           <li><a href="#sur-mesure">Sur mesure</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="nav__cta-item"><a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="btn btn--primary nav__cta" target="_blank" rel="noopener">Itinéraire ↗</a></li>
+          <li class="nav__cta-item"><a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=navbar&amp;utm_content=itineraire" class="btn btn--outline nav__cta" target="_blank" rel="noopener noreferrer">Itinéraire ↗</a></li>
+          <li class="nav__socials-menu">
+            <ul class="nav__socials nav__socials--menu" aria-label="Réseaux sociaux">
+              <li>
+                <a href="https://www.facebook.com/ChocolaterieDuBugnon?utm_source=website&amp;utm_medium=social&amp;utm_campaign=navbar&amp;utm_content=facebook" class="nav__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=navbar&amp;utm_content=instagram" class="nav__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=navbar&amp;utm_content=pinterest" class="nav__social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.619 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
         <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -65,31 +98,22 @@
 
   <main id="main">
 
-    <!-- HERO (structure inspirée de L'Origine) -->
+    <!-- HERO -->
     <section class="hero" id="accueil" aria-label="Accueil">
-      <div class="hero__layout">
-        <div class="hero__panel hero__panel--media hero__panel--left" aria-hidden="true">
-          <img src="images/new_images/chocolat/1000004848.jpg" alt="" width="800" height="1000" loading="eager" decoding="async">
-        </div>
-        <div class="hero__panel hero__panel--center">
-          <a href="#" class="hero__brand" aria-label="Chocolaterie du Bugnon — accueil">
-            <img src="assets/bugnon-logo-user.png" alt="" class="hero__logo" width="112" height="112">
-          </a>
-          <h1 class="hero__title">
-            <span>LE GRAND CRU SUISSE</span>
-            
-          </h1>
-          <div class="hero__cta-wrap">
-            <a href="#produits" class="hero__cta">Découvrir nos produits</a>
-          </div>
-          <p class="hero__address">Rue du Bugnon 10 · 1005 Lausanne</p>
-        </div>
-        <div class="hero__panel hero__panel--media hero__panel--right" aria-hidden="true">
-          <img src="images/chocolats.jpg" alt="" width="800" height="1000" loading="eager" decoding="async">
-        </div>
+      <div class="hero__bg" aria-hidden="true">
+        <img src="images/new_images/chocolat/1000004848.jpg" alt="" width="1600" height="1000" loading="eager" decoding="async">
       </div>
-      <div class="hero__mobile-media">
-        <img src="images/chocolats.jpg" alt="Tablettes et chocolats artisanaux Chocolaterie du Bugnon" width="1200" height="800" loading="eager" decoding="async">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <h1 class="hero__title">Le Grand Cru Suisse</h1>
+          <h2 class="hero__subtitle">Chocolatier artisan à Lausanne. Créations Grands Crus, confiseries et glaces faites main.</h2>
+          <div class="hero__actions">
+            <a href="#produits" class="btn btn--gold hero__btn--primary">Découvrir nos produits</a>
+            <a href="#contact" class="btn hero__btn--secondary">Nous rendre visite</a>
+          </div>
+          <p class="hero__address"><a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=hero&amp;utm_content=address" target="_blank" rel="noopener noreferrer">Rue du Bugnon 10 · 1005 Lausanne</a></p>
+        </div>
       </div>
     </section>
 
@@ -173,7 +197,7 @@
 
         <div class="produit-tile" data-category="chocolats">
           <div class="produit-tile__img-wrap">
-            <img src="images/new_images/chocolat/c1.jpg" alt="Chocolats grands crus Bugnon" class="produit-tile__img">
+            <img src="images/new_images/chocolat/c8.jpg" alt="Chocolats grands crus Bugnon" class="produit-tile__img">
             <div class="produit-tile__overlay">
               <span class="produit-tile__overlay-label">Voir la galerie</span>
             </div>
@@ -242,7 +266,7 @@
 
     <!-- CAMPAGNE SAISONNIÈRE / NOUVEAUTÉ -->
     <section class="campagne section section--dark" id="saison" aria-labelledby="campagne-title">
-      <div class="container campagne__inner">
+      <div class="campagne__inner">
         <div class="campagne__visual">
           <div class="campagne__frame">
             <img src="images/glaces2.jpg" alt="Glace et sorbet artisanaux — nouveauté été" class="campagne__img" width="900" height="1100" loading="lazy" decoding="async">
@@ -255,7 +279,7 @@
           <div class="rule rule--gold campagne__rule"></div>
           <p class="campagne__sub">Voyagez sous les tropiques avec l'intensité d'un grand cru de Grenade. Glaces et sorbets 100&nbsp;% plein fruits, confectionnés à la main en boutique.</p>
           <div class="campagne__actions">
-            <a href="#contact" class="btn btn--outline-light btn--lg campagne__cta">Je me rends en boutique</a>
+            <a href="#contact" class="btn btn--gold btn--lg campagne__cta">Je me rends en boutique</a>
           </div>
         </div>
       </div>
@@ -343,7 +367,7 @@
   </li>
 </ul>
 <div style="text-align:center; margin-top: 2.5rem;">
-  <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="btn btn--outline" target="_blank" rel="noopener">Voir tous les avis Google →</a>
+  <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=avis&amp;utm_content=google_reviews" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Voir tous les avis Google →</a>
 </div></div>
     </section>
 
@@ -356,7 +380,7 @@
   <dl class="acces__details">
     <div class="acces__row">
       <dt class="sr-only">Adresse</dt>
-      <dd>Rue du Bugnon 10, 1005 Lausanne</dd>
+      <dd><a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=contact&amp;utm_content=address" target="_blank" rel="noopener noreferrer">Rue du Bugnon 10, 1005 Lausanne</a></dd>
     </div>
     <div class="acces__row">
       <dt class="sr-only">Téléphone</dt>
@@ -368,12 +392,12 @@
     </div>
   </dl>
   <div class="acces__actions">
-    <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="btn btn--primary" target="_blank" rel="noopener">Itinéraire ↗</a>
+    <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=contact&amp;utm_content=itineraire" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Itinéraire ↗</a>
     <a href="tel:+41215583807" class="btn btn--outline">Appeler</a>
   </div>
 </div>
 <div class="acces__map">
-  <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="acces__map-link" target="_blank" rel="noopener" aria-label="Ouvrir l'adresse dans Google Maps">
+  <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=contact&amp;utm_content=map_photo" class="acces__map-link" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir l'adresse dans Google Maps">
     <img
       src="images/shop_image.webp"
       alt="Devanture de la Chocolaterie du Bugnon, Rue du Bugnon 10, Lausanne"
@@ -382,7 +406,7 @@
       height="512"
       loading="lazy">
   </a>
-  <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac" class="acces__map-open" target="_blank" rel="noopener">Ouvrir dans Google Maps ↗</a>
+  <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=contact&amp;utm_content=google_maps" class="acces__map-open" target="_blank" rel="noopener noreferrer">Ouvrir dans Google Maps ↗</a>
 </div></div>
     </section>
 
@@ -413,19 +437,30 @@
     <div class="container footer__inner"><div class="footer__grid">
   <div class="footer__brand">
     <div class="footer__brand-logo">
-      <img src="assets/bugnon-logo-user.png" alt="" class="footer__logo" width="56" height="56">
+      <img src="assets/bugnon-logo.svg" alt="" class="footer__logo" width="56" height="62">
       <span class="footer__name">Bugnon</span>
     </div>
     <address class="footer__address">
-      Rue du Bugnon 10<br>
-      1005 Lausanne<br>
+      <a href="https://maps.app.goo.gl/YdtdmTtCYGd9o5u18?g_st=ac&amp;utm_source=website&amp;utm_medium=maps&amp;utm_campaign=footer&amp;utm_content=address" target="_blank" rel="noopener noreferrer">Rue du Bugnon 10<br>1005 Lausanne</a><br>
       <a href="tel:+41215583807">+41 21 558 38 07</a>
     </address>
-    <div class="footer__social">
-      <a href="https://www.instagram.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=footer&amp;utm_content=instagram" class="footer__social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://www.facebook.com/ChocolaterieDuBugnon?utm_source=website&amp;utm_medium=social&amp;utm_campaign=footer&amp;utm_content=facebook" class="footer__social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
-      <a href="https://www.pinterest.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=footer&amp;utm_content=pinterest" class="footer__social-link" target="_blank" rel="noopener noreferrer">Pinterest</a>
-    </div>
+    <ul class="footer__socials" aria-label="Réseaux sociaux">
+      <li>
+        <a href="https://www.facebook.com/ChocolaterieDuBugnon?utm_source=website&amp;utm_medium=social&amp;utm_campaign=footer&amp;utm_content=facebook" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=footer&amp;utm_content=instagram" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.pinterest.com/chocolaterie_du_bugnon/?utm_source=website&amp;utm_medium=social&amp;utm_campaign=footer&amp;utm_content=pinterest" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.619 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+        </a>
+      </li>
+    </ul>
   </div>
   <nav class="footer__nav" aria-label="Navigation footer">
     <p class="footer__nav-title">Navigation</p>

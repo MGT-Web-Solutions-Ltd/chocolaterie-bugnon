@@ -28,6 +28,7 @@
 (function () {
   var GALLERY_IMAGES = {
     chocolats: [
+      'images/new_images/chocolat/c8.jpg',
       'images/new_images/chocolat/c1.jpg',
       'images/new_images/chocolat/c2.jpg',
       'images/new_images/chocolat/c3.jpg',
