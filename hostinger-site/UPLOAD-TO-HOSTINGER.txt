@@ -2,18 +2,43 @@
   CHOCOLATERIE DU BUGNON — MISE EN LIGNE HOSTINGER
 ═══════════════════════════════════════════════════════════════
 
-ÉTAPES
-──────
-1. Sélectionnez TOUT dans ce dossier (Cmd+A / Ctrl+A)
-2. Hostinger → Fichiers → public_html → Téléverser
-3. Vérifiez : public_html/index.html existe (pas public_html/hostinger-site/)
+OPTION A (recommandée) — dossier prêt à l’envoi
+──────────────────────────────────────────────
+1. À la racine du projet, ouvrez le dossier :  hostinger-site/
+2. Sélectionnez TOUT (Cmd+A / Ctrl+A)
+3. Dans Hostinger → Fichiers → public_html → Téléverser
+4. Confirmez que index.html est directement dans public_html
+   (pas dans public_html/hostinger-site/)
+
+OPTION B — depuis landing/
+──────────────────────────
+1. Terminal :  ./landing/build-for-hostinger.sh
+2. Puis utilisez hostinger-site/ comme ci-dessus
+
+STRUCTURE CORRECTE sur le serveur
+─────────────────────────────────
+public_html/
+  index.html          ← page d’accueil
+  css/styles.css
+  js/main.js
+  assets/bugnon-logo.svg
+  images/...
+  .htaccess
+  robots.txt
+
+STRUCTURE INCORRECTE (site cassé)
+─────────────────────────────────
+public_html/landing/index.html   ← NE PAS faire ça
 
 APRÈS L’UPLOAD
 ──────────────
 1. hPanel → SSL → Force HTTPS : ON
-2. https://VOTRE-DOMAINE/check-deploy.html → tout en OK
+2. Ouvrir : https://VOTRE-DOMAINE/check-deploy.html
+   → toutes les lignes doivent afficher OK
 3. Supprimer check-deploy.html
-4. Téléphone : onglet privé
+4. Sur téléphone : onglet privé ou vider le cache
 
-Regénérer ce dossier après modification du site :
-  ./landing/build-for-hostinger.sh
+AIDE
+────
+- Site de test Hostinger : purple-jellyfish-746953.hostingersite.com
+- Domaine prod : chocolateriedubugnon.ch (remplacer les fichiers WordPress)
