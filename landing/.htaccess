@@ -1,1 +1,11 @@
 DirectoryIndex index.html
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+  <Files "llms.txt">
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </Files>
+  <Files "robots.txt">
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </Files>
+</IfModule>

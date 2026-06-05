@@ -1,0 +1,50 @@
+    # Chocolaterie du Bugnon
+
+    > Chocolaterie artisanale a Lausanne (Suisse), installee depuis 2014. Chocolats Grands Crus, confiseries, glaces et sorbets faits main. Boutique uniquement (pas de vente en ligne).
+
+    ## Identite
+
+    - Nom : Chocolaterie du Bugnon
+    - Type : chocolatier artisan, confiserie, glacier artisanal
+    - Langue du site : francais (fr-CH)
+    - Artisan : Benoit Machard
+
+    ## Contact et acces
+
+    - Adresse : Rue du Bugnon 10, 1005 Lausanne, Suisse (proximite CHUV)
+    - Telephone : +41 21 558 38 07
+    - Site web : https://chocolateriedubugnon.ch/
+    - Itineraire (Google Maps) : https://maps.app.goo.gl/YdtdmTtCYGd9o5u18
+
+    ## Horaires
+
+    - Lundi-vendredi : 9h00-18h00
+    - Samedi : 9h00-15h00 (continu)
+    - Ferme le dimanche
+
+    ## Produits et services
+
+    - Chocolats Grands Crus (pralines, truffes, paves, creations de saison)
+    - Confiseries et gourmandises
+    - Glaces et sorbets artisanaux
+    - Commandes sur mesure (cadeaux entreprise, mariages, anniversaires) : delai 48 h, confirmation par telephone de preference
+    - Location fontaine a chocolat pour evenements : 150 CHF avec 3 kg chocolat Grands Crus 65 % cacao, origine Amerique centrale (sur demande)
+
+    ## Pages utiles sur le site
+
+    - Accueil : https://chocolateriedubugnon.ch/
+    - Produits : https://chocolateriedubugnon.ch/#produits
+    - Sur mesure : https://chocolateriedubugnon.ch/#sur-mesure
+    - Contact / visite : https://chocolateriedubugnon.ch/#contact
+    - FAQ : https://chocolateriedubugnon.ch/#faq
+
+    ## Reseaux sociaux
+
+    - Facebook : https://www.facebook.com/ChocolaterieDuBugnon
+    - Instagram : https://www.instagram.com/chocolaterie_du_bugnon/
+    - Pinterest : https://www.pinterest.com/chocolaterie_du_bugnon/
+
+    ## Donnees structurees
+
+    - FAQ et fiche locale (Schema.org) : https://chocolateriedubugnon.ch/
+    - Plan du site : https://chocolateriedubugnon.ch/sitemap.xml
