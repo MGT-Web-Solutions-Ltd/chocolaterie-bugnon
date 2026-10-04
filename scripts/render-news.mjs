@@ -49,6 +49,7 @@ function renderFeatured(item) {
   const eyebrow = item.eyebrow
     ? `\n          <p class="section-eyebrow section-eyebrow--gold campagne__eyebrow">${esc(item.eyebrow)}</p>`
     : '';
+  const sub = item.text ? `\n          <p class="campagne__sub">${esc(item.text)}</p>` : '';
   const cta = renderCta(item.cta, 'btn btn--gold btn--lg campagne__cta');
   const actions = cta ? `\n          <div class="campagne__actions">\n            ${cta}\n          </div>` : '';
 
@@ -60,8 +61,7 @@ function renderFeatured(item) {
         </div>
         <div class="campagne__text">${badge}${eyebrow}
           <h2 class="campagne__title" id="actus-title">${esc(item.title)}</h2>
-          <div class="rule rule--gold campagne__rule"></div>
-          <p class="campagne__sub">${esc(item.text)}</p>${actions}
+          <div class="rule rule--gold campagne__rule"></div>${sub}${actions}
         </div>
       </div>`;
 }
@@ -79,7 +79,7 @@ function renderCard(item) {
             </div>
             <div class="actus__card-body">${time}
               <h3 class="actus__card-title">${esc(item.title)}</h3>
-              <p class="actus__card-text">${esc(item.text)}</p>${link}
+              ${item.text ? `<p class="actus__card-text">${esc(item.text)}</p>` : ''}${link}
             </div>
           </article>`;
 }
@@ -124,7 +124,7 @@ function main() {
   const items = Array.isArray(data.items) ? data.items : [];
 
   for (const item of items) {
-    for (const field of ['id', 'title', 'text', 'image', 'imageAlt']) {
+    for (const field of ['id', 'title', 'image', 'imageAlt']) {
       if (!item[field]) throw new Error(`news.json: item "${item.id ?? '?'}" is missing "${field}".`);
     }
   }
