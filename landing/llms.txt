@@ -34,6 +34,7 @@
 
     - Accueil : https://chocolateriedubugnon.ch/
     - Produits : https://chocolateriedubugnon.ch/#produits
+    - Actualites (nouveautes et evenements en cours) : https://chocolateriedubugnon.ch/#actualites
     - Sur mesure : https://chocolateriedubugnon.ch/#sur-mesure
     - Contact / visite : https://chocolateriedubugnon.ch/#contact
     - FAQ : https://chocolateriedubugnon.ch/#faq
