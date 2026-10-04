@@ -41,4 +41,4 @@ APRÈS L’UPLOAD
 AIDE
 ────
 - Site de test Hostinger : purple-jellyfish-746953.hostingersite.com
-- Domaine prod : chocolateriedubugnon.ch (remplacer les fichiers WordPress)
+- Domaine prod : chocolaterie-du-bugnon.ch (remplacer les fichiers WordPress)

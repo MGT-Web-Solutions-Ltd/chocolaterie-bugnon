@@ -23,7 +23,7 @@ par FTPS à chaque push sur `main`. Seuls les fichiers modifiés sont transfér�
 
 hPanel Hostinger → **Fichiers** → **Comptes FTP**. Notez :
 
-- Hôte FTP (ex. `ftp.chocolateriedubugnon.ch` ou une IP)
+- Hôte FTP : l'adresse affichée comme « FTP IP (hostname) », **sans le préfixe `ftp://`** (ex. `92.113.19.103`)
 - Nom d'utilisateur FTP
 - Mot de passe (créez-en un nouveau si besoin)
 
