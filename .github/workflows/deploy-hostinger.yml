@@ -63,9 +63,7 @@ jobs:
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./hostinger-site/
-          # TEMPORARY — staging folder while the pipeline is being verified.
-          # To go live: change the fallback back to '/public_html/'.
-          server-dir: ${{ vars.HOSTINGER_REMOTE_DIR || '/public_html/_deploytest/' }}
+          server-dir: ${{ vars.HOSTINGER_REMOTE_DIR || '/public_html/' }}
           # Only changed files are transferred; state is kept in .ftp-deploy-sync-state.json
           # on the server. Never wipe the remote folder automatically.
           dangerous-clean-slate: false
