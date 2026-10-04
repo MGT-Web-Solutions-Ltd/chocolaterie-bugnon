@@ -73,9 +73,11 @@ function splitCaption(caption) {
   if (head.length > MAX_TITLE) {
     return { title: truncate(head, MAX_TITLE), text: truncate(clean.replace(/\n+/g, ' '), MAX_TEXT) };
   }
+  // A one-phrase caption has no body to show; repeating the headline under it
+  // renders the same sentence twice.
   return {
     title: head.replace(/[.]$/, ''),
-    text: truncate(tail || head, MAX_TEXT),
+    text: tail ? truncate(tail, MAX_TEXT) : '',
   };
 }
 
@@ -177,7 +179,7 @@ async function main() {
   const synced = [];
   for (const post of posts.slice(0, MAX_ITEMS)) {
     const { title, text } = splitCaption(post.caption);
-    if (!title || !text) continue;
+    if (!title) continue;
     synced.push({
       id: post.id,
       badge: 'Actualité',
