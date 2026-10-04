@@ -51,6 +51,25 @@ Both must be run and committed, or the deploy workflow fails its freshness check
 
 ---
 
+## 2b. Real search data
+
+`docs/search-console-latest.md` is refreshed every Tuesday morning from Google Search
+Console, before this review runs. **Read it first.** It is generated — never edit it.
+
+It tells you what the site is *actually* found for, which the markup cannot:
+
+- A query with impressions but near-zero clicks is a title or description problem on
+  that page, not a schema problem.
+- A query ranking 8–20 is the one worth earning a sentence of real copy; a query
+  ranking 90 is not.
+- A query people search that the page never uses the words for is a content gap —
+  report it, do not invent a claim to fill it.
+
+The site went live on 4 October 2026, so expect the file to be empty or thin for the
+first few weeks. An empty report is not a finding; carry on with the structural work.
+
+---
+
 ## 3. Weekly rotation
 
 Pick the focus for the current ISO week number (`date +%V`), so the same ground is

@@ -1,0 +1,46 @@
+name: Search Console report
+
+# Pulls Search Console performance data into docs/ so the weekly SEO review has
+# real search data to work from. Runs before the Tuesday review.
+on:
+  schedule:
+    # Tuesdays 05:23 UTC — ahead of the 06:49 UTC SEO review.
+    - cron: '23 5 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: search-console
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch Search Console data
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL }}
+        run: node scripts/fetch-search-console.mjs
+
+      # docs/ is outside the deploy workflow's path filter, so this commit
+      # updates the report without redeploying the site.
+      - name: Commit the report
+        run: |
+          if git diff --quiet -- docs/search-console-latest.md; then
+            echo "No change in the report — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/search-console-latest.md
+          git commit -m "data: refresh the Search Console report"
+          git push

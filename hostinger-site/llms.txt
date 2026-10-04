@@ -1,51 +1,51 @@
-    # Chocolaterie du Bugnon
+# Chocolaterie du Bugnon
 
-    > Chocolaterie artisanale a Lausanne (Suisse), installee depuis 2014. Chocolats Grands Crus, confiseries, glaces et sorbets faits main. Boutique uniquement (pas de vente en ligne).
+> Chocolaterie artisanale à Lausanne (Suisse), installée depuis 2014. Chocolats Grands Crus, confiseries, glaces et sorbets faits main. Boutique uniquement (pas de vente en ligne).
 
-    ## Identite
+## Identité
 
-    - Nom : Chocolaterie du Bugnon
-    - Type : chocolatier artisan, confiserie, glacier artisanal
-    - Langue du site : francais (fr-CH)
-    - Artisan : Benoit Machard
+- Nom : Chocolaterie du Bugnon
+- Type : chocolatier artisan, confiserie, glacier artisanal
+- Langue du site : français (fr-CH)
+- Artisan : Benoît Machard
 
-    ## Contact et acces
+## Contact et accès
 
-    - Adresse : Rue du Bugnon 10, 1005 Lausanne, Suisse (proximite CHUV)
-    - Telephone : +41 21 558 38 07
-    - Site web : https://chocolaterie-du-bugnon.ch/
-    - Itineraire (Google Maps) : https://maps.app.goo.gl/YdtdmTtCYGd9o5u18
+- Adresse : Rue du Bugnon 10, 1005 Lausanne, Suisse (à proximité du CHUV)
+- Téléphone : +41 21 558 38 07
+- Site web : https://chocolaterie-du-bugnon.ch/
+- Itinéraire (Google Maps) : https://maps.app.goo.gl/YdtdmTtCYGd9o5u18
 
-    ## Horaires
+## Horaires
 
-    - Lundi-vendredi : 9h00-18h00
-    - Samedi : 9h00-15h00 (continu)
-    - Ferme le dimanche
+- Lundi-vendredi : 9h00-18h00
+- Samedi : 9h00-15h00 (continu)
+- Fermé le dimanche
 
-    ## Produits et services
+## Produits et services
 
-    - Chocolats Grands Crus (pralines, truffes, paves, creations de saison)
-    - Confiseries et gourmandises
-    - Glaces et sorbets artisanaux
-    - Commandes sur mesure (cadeaux entreprise, mariages, anniversaires) : delai 48 h, confirmation par telephone de preference
-    - Location fontaine a chocolat pour evenements : 150 CHF avec 3 kg chocolat Grands Crus 65 % cacao, origine Amerique centrale (sur demande)
+- Chocolats Grands Crus (pralinés, truffes, pavés, créations de saison)
+- Confiseries et gourmandises
+- Glaces et sorbets artisanaux
+- Commandes sur mesure (cadeaux entreprise, mariages, anniversaires) : délai 48 h, confirmation par téléphone de préférence
+- Location fontaine à chocolat pour événements : 150 CHF avec 3 kg de chocolat Grands Crus 65 % cacao, origine Amérique centrale. Caution 600 CHF (sur demande)
 
-    ## Pages utiles sur le site
+## Pages utiles sur le site
 
-    - Accueil : https://chocolaterie-du-bugnon.ch/
-    - Produits : https://chocolaterie-du-bugnon.ch/#produits
-    - Actualites (nouveautes et evenements en cours) : https://chocolaterie-du-bugnon.ch/#actualites
-    - Sur mesure : https://chocolaterie-du-bugnon.ch/#sur-mesure
-    - Contact / visite : https://chocolaterie-du-bugnon.ch/#contact
-    - FAQ : https://chocolaterie-du-bugnon.ch/#faq
+- Accueil : https://chocolaterie-du-bugnon.ch/
+- Produits : https://chocolaterie-du-bugnon.ch/#produits
+- Actualités (nouveautés et événements en cours) : https://chocolaterie-du-bugnon.ch/#actualites
+- Sur mesure : https://chocolaterie-du-bugnon.ch/#sur-mesure
+- Contact / visite : https://chocolaterie-du-bugnon.ch/#contact
+- FAQ : https://chocolaterie-du-bugnon.ch/#faq
 
-    ## Reseaux sociaux
+## Réseaux sociaux
 
-    - Facebook : https://www.facebook.com/ChocolaterieDuBugnon
-    - Instagram : https://www.instagram.com/chocolaterie_du_bugnon/
-    - Pinterest : https://www.pinterest.com/chocolaterie_du_bugnon/
+- Facebook : https://www.facebook.com/ChocolaterieDuBugnon
+- Instagram : https://www.instagram.com/chocolaterie_du_bugnon/
+- Pinterest : https://www.pinterest.com/chocolaterie_du_bugnon/
 
-    ## Donnees structurees
+## Données structurées
 
-    - FAQ et fiche locale (Schema.org) : https://chocolaterie-du-bugnon.ch/
-    - Plan du site : https://chocolaterie-du-bugnon.ch/sitemap.xml
+- FAQ et fiche locale (Schema.org) : https://chocolaterie-du-bugnon.ch/
+- Plan du site : https://chocolaterie-du-bugnon.ch/sitemap.xml
