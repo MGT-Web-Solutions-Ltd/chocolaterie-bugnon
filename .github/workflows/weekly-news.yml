@@ -1,0 +1,67 @@
+name: Weekly news sync
+
+# Pulls the latest Instagram/Facebook posts into the Actualités section and opens
+# a PR. Nothing reaches the live site until that PR is merged.
+on:
+  schedule:
+    # Mondays, 06:17 UTC (off the hour: GitHub's scheduler is busiest at :00).
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: weekly-news
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No token configured => this is a no-op and the job simply finds no changes.
+      - name: Fetch latest social posts
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+        run: node scripts/sync-social.mjs
+
+      - name: Render Actualités into the page
+        run: node scripts/render-news.mjs
+
+      - name: Rebuild the deploy folder
+        run: ./landing/build-for-hostinger.sh
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/weekly-news
+          base: main
+          title: 'Actualités — mise à jour hebdomadaire'
+          commit-message: 'content: weekly Actualités sync from social'
+          delete-branch: true
+          labels: automated, content
+          body: |
+            Mise à jour automatique de la section **Actualités** à partir des
+            dernières publications Instagram / Facebook.
+
+            **À vérifier avant de fusionner :**
+            - [ ] Les titres et textes sont lisibles (les légendes sont tronquées automatiquement)
+            - [ ] Les photos conviennent à la page d'accueil
+            - [ ] Rien d'obsolète ou de promotionnel n'est mis en avant
+
+            Les éléments repris des réseaux portent `"review": true` dans
+            `landing/data/news.json`. Modifiez ce fichier puis relancez
+            `node scripts/render-news.mjs && ./landing/build-for-hostinger.sh`
+            pour corriger un texte avant de fusionner.
+
+            Une fois fusionnée, cette PR déclenche le déploiement sur Hostinger.

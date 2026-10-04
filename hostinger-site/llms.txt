@@ -13,7 +13,7 @@
 
     - Adresse : Rue du Bugnon 10, 1005 Lausanne, Suisse (proximite CHUV)
     - Telephone : +41 21 558 38 07
-    - Site web : https://chocolateriedubugnon.ch/
+    - Site web : https://chocolaterie-du-bugnon.ch/
     - Itineraire (Google Maps) : https://maps.app.goo.gl/YdtdmTtCYGd9o5u18
 
     ## Horaires
@@ -32,11 +32,12 @@
 
     ## Pages utiles sur le site
 
-    - Accueil : https://chocolateriedubugnon.ch/
-    - Produits : https://chocolateriedubugnon.ch/#produits
-    - Sur mesure : https://chocolateriedubugnon.ch/#sur-mesure
-    - Contact / visite : https://chocolateriedubugnon.ch/#contact
-    - FAQ : https://chocolateriedubugnon.ch/#faq
+    - Accueil : https://chocolaterie-du-bugnon.ch/
+    - Produits : https://chocolaterie-du-bugnon.ch/#produits
+    - Actualites (nouveautes et evenements en cours) : https://chocolaterie-du-bugnon.ch/#actualites
+    - Sur mesure : https://chocolaterie-du-bugnon.ch/#sur-mesure
+    - Contact / visite : https://chocolaterie-du-bugnon.ch/#contact
+    - FAQ : https://chocolaterie-du-bugnon.ch/#faq
 
     ## Reseaux sociaux
 
@@ -46,5 +47,5 @@
 
     ## Donnees structurees
 
-    - FAQ et fiche locale (Schema.org) : https://chocolateriedubugnon.ch/
-    - Plan du site : https://chocolateriedubugnon.ch/sitemap.xml
+    - FAQ et fiche locale (Schema.org) : https://chocolaterie-du-bugnon.ch/
+    - Plan du site : https://chocolaterie-du-bugnon.ch/sitemap.xml

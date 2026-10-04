@@ -1,0 +1,24 @@
+{
+  "$comment": "Actualités de la Chocolaterie du Bugnon. Le premier élément avec \"featured\": true occupe le grand bloc; les suivants (3 max) s'affichent en cartes. Après toute modification: node scripts/render-news.mjs && ./landing/build-for-hostinger.sh",
+  "updated": "2026-10-04",
+  "items": [
+    {
+      "id": "glaces-ete-2026",
+      "featured": true,
+      "badge": "Nouveauté",
+      "eyebrow": "Été 2026",
+      "title": "Fondez pour nos glaces",
+      "text": "Voyagez sous les tropiques avec l'intensité de sorbets aux chocolats Grands crus. Glaces et sorbets maisons avec des parfums uniques.",
+      "image": "images/glaces2.jpg",
+      "imageAlt": "Glace et sorbet artisanaux, nouveauté été",
+      "cta": {
+        "label": "Je me rends au magasin",
+        "href": "#contact"
+      },
+      "date": "2026-06-01",
+      "source": "manual",
+      "width": 900,
+      "height": 1100
+    }
+  ]
+}
