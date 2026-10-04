@@ -35,12 +35,14 @@ jobs:
       # updates the report without redeploying the site.
       - name: Commit the report
         run: |
-          if git diff --quiet -- docs/search-console-latest.md; then
+          # Stage first: git diff alone reports no change for an untracked file,
+          # so the very first report would never be committed.
+          git add docs/search-console-latest.md
+          if git diff --cached --quiet -- docs/search-console-latest.md; then
             echo "No change in the report — nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/search-console-latest.md
           git commit -m "data: refresh the Search Console report"
           git push
