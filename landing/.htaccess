@@ -8,4 +8,32 @@ AddDefaultCharset UTF-8
   <Files "robots.txt">
     Header set Content-Type "text/plain; charset=UTF-8"
   </Files>
+
+  # ---- Cache policy ----
+  # The page is republished weekly from the Actualités sync, so a cached copy of
+  # the HTML means the site looks unchanged for hours after publishing. These
+  # files must be revalidated on every request; unchanged ones answer 304, which
+  # costs a round trip and almost no bytes.
+  <FilesMatch "\.(html|css|js|txt|xml|json)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Media is where the bytes are and it rarely changes: cache it for a week.
+  # News images carry the Instagram post id in their filename, so a new post
+  # means a new URL rather than a stale cached file.
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|avif|mp4|woff|woff2|ttf|otf|ico)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
+
+# Fallback for servers with mod_expires but not mod_headers.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 0 seconds"
+  ExpiresByType image/jpeg "access plus 1 week"
+  ExpiresByType image/png "access plus 1 week"
+  ExpiresByType image/webp "access plus 1 week"
+  ExpiresByType image/svg+xml "access plus 1 week"
 </IfModule>
