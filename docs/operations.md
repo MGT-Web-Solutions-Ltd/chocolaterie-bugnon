@@ -154,6 +154,34 @@ Puis créez les secrets GitHub :
 
 ---
 
+## 2b. Rapport Search Console
+
+`.github/workflows/search-console.yml` récupère chaque mardi matin les données de
+performance depuis Google Search Console et écrit `docs/search-console-latest.md`,
+que la revue SEO lit ensuite. Le fichier est **généré** : ne pas l'éditer à la main.
+
+Secret requis : `GSC_SERVICE_ACCOUNT_JSON` — la clé JSON d'un compte de service.
+
+Mise en place (une seule fois) :
+
+1. Google Cloud → nouveau projet → activer **Google Search Console API** (gratuit,
+   aucun compte de facturation requis)
+2. IAM → **Comptes de service** → créer (aucun rôle projet nécessaire) → **Clés** →
+   nouvelle clé **JSON**
+3. **Search Console → Paramètres → Utilisateurs et autorisations → Ajouter** l'adresse
+   e-mail du compte de service. **Sans cette étape, l'API répond sans erreur mais ne
+   renvoie aucune donnée** — c'est l'oubli le plus courant et le plus difficile à
+   diagnostiquer.
+4. Enregistrer le contenu intégral du fichier JSON dans le secret
+   `GSC_SERVICE_ACCOUNT_JSON`, puis supprimer le fichier téléchargé
+
+La propriété visée est `sc-domain:chocolaterie-du-bugnon.ch` (propriété de domaine).
+Pour en viser une autre, créer la variable `GSC_SITE_URL`.
+
+Sans secret configuré, le script ne fait rien et le workflow reste vert.
+
+---
+
 ## 3. Revue SEO & GEO hebdomadaire
 
 Une session Claude programmée relit le site chaque semaine et ouvre une PR. Son cahier
