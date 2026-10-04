@@ -29,6 +29,13 @@ hPanel Hostinger → **Fichiers** → **Comptes FTP**. Notez :
 
 **b. Les enregistrer comme secrets GitHub**
 
+> ⚠️ Ajouter un secret exige le rôle **admin** sur le dépôt. Un rôle *write* ne
+> suffit pas : l'onglet *Secrets* n'apparaît même pas. Si vous n'êtes pas admin,
+> demandez à un propriétaire de l'organisation de créer ces trois secrets (ou de
+> vous passer admin). Tant qu'ils manquent, le workflow vérifie quand même le build
+> puis **saute l'envoi** avec un avertissement — rien ne casse, le site se met à
+> jour par téléversement manuel comme avant.
+
 GitHub → le dépôt → **Settings** → **Secrets and variables** → **Actions** →
 **New repository secret**. Créez :
 

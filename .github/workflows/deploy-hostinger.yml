@@ -40,7 +40,22 @@ jobs:
             exit 1
           fi
 
+      # Adding repository secrets needs admin on the repo. Until an org owner sets
+      # them, skip the upload with a warning rather than failing every push.
+      - name: Check the Hostinger secrets are configured
+        id: ftp
+        env:
+          FTP_HOST: ${{ secrets.HOSTINGER_FTP_HOST }}
+        run: |
+          if [ -z "$FTP_HOST" ]; then
+            echo 'configured=false' >> "$GITHUB_OUTPUT"
+            echo '::warning title=Deploy skipped::HOSTINGER_FTP_* secrets are not set, so the site was not uploaded. The build was still verified. See docs/operations.md.'
+          else
+            echo 'configured=true' >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Upload to Hostinger
+        if: steps.ftp.outputs.configured == 'true'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOSTINGER_FTP_HOST }}
