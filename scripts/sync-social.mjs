@@ -172,7 +172,10 @@ async function main() {
   }
 
   const data = JSON.parse(readFileSync(DATA, 'utf8'));
-  const manual = (data.items ?? []).filter((item) => !SOCIAL_SOURCES.has(item.source));
+  // Pinning is the owner's decision, so it holds whatever the item's source is —
+  // otherwise pinning a post the sync itself fetched would be silently ignored.
+  const kept = (data.items ?? []).filter((item) => item.pinned || !SOCIAL_SOURCES.has(item.source));
+  const keptIds = new Set(kept.map((item) => item.id));
 
   posts.sort((a, b) => String(b.date).localeCompare(String(a.date)));
 
@@ -201,7 +204,10 @@ async function main() {
     return;
   }
 
-  const items = [...manual.filter((i) => i.pinned), ...synced, ...manual.filter((i) => !i.pinned)]
+  // A pinned post still comes back from the API; without this it would appear twice.
+  const fresh = synced.filter((item) => !keptIds.has(item.id));
+
+  const items = [...kept.filter((i) => i.pinned), ...fresh, ...kept.filter((i) => !i.pinned)]
     .slice(0, MAX_ITEMS)
     .map((item, index) => ({ ...item, featured: index === 0 }));
 
