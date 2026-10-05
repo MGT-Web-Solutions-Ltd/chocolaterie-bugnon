@@ -6,6 +6,11 @@ on:
   schedule:
     # Mondays, 06:17 UTC (off the hour: GitHub's scheduler is busiest at :00).
     - cron: '17 6 * * 1'
+    # Thursdays, as a safety net. GitHub delivers scheduled runs best-effort and
+    # drops them under load — the 2026-10-05 Monday slot never fired at all.
+    # A run with nothing new to add changes no files and opens no pull request,
+    # so the extra slot costs nothing on a quiet week.
+    - cron: '41 6 * * 4'
   workflow_dispatch:
 
 permissions:
