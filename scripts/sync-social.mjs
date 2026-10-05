@@ -172,6 +172,7 @@ async function main() {
   }
 
   const data = JSON.parse(readFileSync(DATA, 'utf8'));
+  const before = JSON.stringify(data.items ?? []);
   // Pinning is the owner's decision, so it holds whatever the item's source is —
   // otherwise pinning a post the sync itself fetched would be silently ignored.
   const kept = (data.items ?? []).filter((item) => item.pinned || !SOCIAL_SOURCES.has(item.source));
@@ -210,6 +211,13 @@ async function main() {
   const items = [...kept.filter((i) => i.pinned), ...fresh, ...kept.filter((i) => !i.pinned)]
     .slice(0, MAX_ITEMS)
     .map((item, index) => ({ ...item, featured: index === 0 }));
+
+  // Stamping the date even when nothing changed would open an empty pull request
+  // every week, which teaches the reviewer to merge without reading.
+  if (JSON.stringify(items) === before) {
+    console.log('Social sync: the Actualités are already up to date — nothing to change.');
+    return;
+  }
 
   pruneImages(items);
 
