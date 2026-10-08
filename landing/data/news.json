@@ -1,6 +1,6 @@
 {
   "$comment": "Actualités de la Chocolaterie du Bugnon. Le premier élément avec \"featured\": true occupe le grand bloc; les suivants (3 max) s'affichent en cartes. Après toute modification: node scripts/render-news.mjs && ./landing/build-for-hostinger.sh",
-  "updated": "2026-10-04",
+  "updated": "2026-10-08",
   "items": [
     {
       "id": "ig-17992196994028634",
@@ -35,6 +35,23 @@
       "source": "instagram",
       "featured": false,
       "pinned": true
+    },
+    {
+      "id": "ig-18115792345822151",
+      "badge": "Actualité",
+      "eyebrow": "Octobre 2026",
+      "title": "🎃👻Halloween est la!",
+      "text": "",
+      "image": "images/news/ig-18115792345822151.jpg",
+      "imageAlt": "🎃👻Halloween est la! — Chocolaterie du Bugnon",
+      "cta": {
+        "label": "Voir sur Instagram",
+        "href": "https://www.instagram.com/p/DeMR2pEMsD8/"
+      },
+      "date": "2026-10-07",
+      "source": "instagram",
+      "review": true,
+      "featured": false
     },
     {
       "id": "glaces-ete-2026",
