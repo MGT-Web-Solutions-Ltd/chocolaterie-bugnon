@@ -1,6 +1,6 @@
 {
   "$comment": "Actualités de la Chocolaterie du Bugnon. Le premier élément avec \"featured\": true occupe le grand bloc; les suivants (3 max) s'affichent en cartes. Après toute modification: node scripts/render-news.mjs && ./landing/build-for-hostinger.sh",
-  "updated": "2026-10-12",
+  "updated": "2026-10-29",
   "items": [
     {
       "id": "ig-17992196994028634",
@@ -37,35 +37,35 @@
       "pinned": true
     },
     {
-      "id": "ig-18127598771508745",
+      "id": "ig-18197819854386763",
       "badge": "Actualité",
       "eyebrow": "Octobre 2026",
-      "title": "🕸️Nos nouvelles tablettes chocolat au lait🕷️",
+      "title": "Promo",
       "text": "",
-      "image": "images/news/ig-18127598771508745.jpg",
-      "imageAlt": "🕸️Nos nouvelles tablettes chocolat au lait🕷️ — Chocolaterie du Bugnon",
+      "image": "images/news/ig-18197819854386763.jpg",
+      "imageAlt": "Promo — Chocolaterie du Bugnon",
       "cta": {
         "label": "Voir sur Instagram",
-        "href": "https://www.instagram.com/p/DeRRH-7sZSw/"
+        "href": "https://www.instagram.com/p/De-UMzbIuax/"
       },
-      "date": "2026-10-09",
+      "date": "2026-10-26",
       "source": "instagram",
       "review": true,
       "featured": false
     },
     {
-      "id": "ig-18115792345822151",
+      "id": "ig-18201525133384900",
       "badge": "Actualité",
       "eyebrow": "Octobre 2026",
-      "title": "🎃👻Halloween est la!",
-      "text": "",
-      "image": "images/news/ig-18115792345822151.jpg",
-      "imageAlt": "🎃👻Halloween est la! — Chocolaterie du Bugnon",
+      "title": "🍫Tablette chocolat noie et lait, graines de courge et sel de Maldon…",
+      "text": "🍫Tablette chocolat noie et lait, graines de courge et sel de Maldon 🍫",
+      "image": "images/news/ig-18201525133384900.jpg",
+      "imageAlt": "🍫Tablette chocolat noie et lait, graines de courge et sel de Maldon… — Chocolaterie du Bugnon",
       "cta": {
         "label": "Voir sur Instagram",
-        "href": "https://www.instagram.com/p/DeMR2pEMsD8/"
+        "href": "https://www.instagram.com/p/De103FkI_NT/"
       },
-      "date": "2026-10-07",
+      "date": "2026-10-23",
       "source": "instagram",
       "review": true,
       "featured": false
