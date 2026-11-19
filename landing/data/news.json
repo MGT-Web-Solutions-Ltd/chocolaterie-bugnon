@@ -1,6 +1,6 @@
 {
   "$comment": "Actualités de la Chocolaterie du Bugnon. Le premier élément avec \"featured\": true occupe le grand bloc; les suivants (3 max) s'affichent en cartes. Après toute modification: node scripts/render-news.mjs && ./landing/build-for-hostinger.sh",
-  "updated": "2026-10-12",
+  "updated": "2026-11-19",
   "items": [
     {
       "id": "ig-17992196994028634",
@@ -37,35 +37,35 @@
       "pinned": true
     },
     {
-      "id": "ig-18127598771508745",
+      "id": "ig-18116891507014565",
       "badge": "Actualité",
-      "eyebrow": "Octobre 2026",
-      "title": "🕸️Nos nouvelles tablettes chocolat au lait🕷️",
-      "text": "",
-      "image": "images/news/ig-18127598771508745.jpg",
-      "imageAlt": "🕸️Nos nouvelles tablettes chocolat au lait🕷️ — Chocolaterie du Bugnon",
+      "eyebrow": "Novembre 2026",
+      "title": "🎄 La magie de Noël approche !",
+      "text": "🍫 Les Calendriers sont arrivés ! ✨ Faites plaisir à vos proches (ou à vous-même !) avec nos délicieux calendriers de l’Avent remplis de douceurs. Ne tardez pas, les quantités sont limitées ! ❤️ à",
+      "image": "images/news/ig-18116891507014565.jpg",
+      "imageAlt": "🎄 La magie de Noël approche ! — Chocolaterie du Bugnon",
       "cta": {
         "label": "Voir sur Instagram",
-        "href": "https://www.instagram.com/p/DeRRH-7sZSw/"
+        "href": "https://www.instagram.com/p/Dfw0EjVsltw/"
       },
-      "date": "2026-10-09",
+      "date": "2026-11-15",
       "source": "instagram",
       "review": true,
       "featured": false
     },
     {
-      "id": "ig-18115792345822151",
+      "id": "ig-18105121256161552",
       "badge": "Actualité",
-      "eyebrow": "Octobre 2026",
-      "title": "🎃👻Halloween est la!",
+      "eyebrow": "Novembre 2026",
+      "title": "🤍🥥🤎🥥🤍🥥🤎",
       "text": "",
-      "image": "images/news/ig-18115792345822151.jpg",
-      "imageAlt": "🎃👻Halloween est la! — Chocolaterie du Bugnon",
+      "image": "images/news/ig-18105121256161552.jpg",
+      "imageAlt": "🤍🥥🤎🥥🤍🥥🤎 — Chocolaterie du Bugnon",
       "cta": {
         "label": "Voir sur Instagram",
-        "href": "https://www.instagram.com/p/DeMR2pEMsD8/"
+        "href": "https://www.instagram.com/reel/DfsCKiWoZqy/"
       },
-      "date": "2026-10-07",
+      "date": "2026-11-13",
       "source": "instagram",
       "review": true,
       "featured": false
