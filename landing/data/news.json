@@ -1,6 +1,6 @@
 {
   "$comment": "Actualités de la Chocolaterie du Bugnon. Le premier élément avec \"featured\": true occupe le grand bloc; les suivants (3 max) s'affichent en cartes. Après toute modification: node scripts/render-news.mjs && ./landing/build-for-hostinger.sh",
-  "updated": "2026-10-12",
+  "updated": "2026-11-26",
   "items": [
     {
       "id": "ig-17992196994028634",
@@ -37,35 +37,35 @@
       "pinned": true
     },
     {
-      "id": "ig-18127598771508745",
+      "id": "ig-18650855401031161",
       "badge": "Actualité",
-      "eyebrow": "Octobre 2026",
-      "title": "🕸️Nos nouvelles tablettes chocolat au lait🕷️",
+      "eyebrow": "Novembre 2026",
+      "title": "☕️🍫 à",
       "text": "",
-      "image": "images/news/ig-18127598771508745.jpg",
-      "imageAlt": "🕸️Nos nouvelles tablettes chocolat au lait🕷️ — Chocolaterie du Bugnon",
+      "image": "images/news/ig-18650855401031161.jpg",
+      "imageAlt": "☕️🍫 à — Chocolaterie du Bugnon",
       "cta": {
         "label": "Voir sur Instagram",
-        "href": "https://www.instagram.com/p/DeRRH-7sZSw/"
+        "href": "https://www.instagram.com/p/DgLUppmICre/"
       },
-      "date": "2026-10-09",
+      "date": "2026-11-25",
       "source": "instagram",
       "review": true,
       "featured": false
     },
     {
-      "id": "ig-18115792345822151",
+      "id": "ig-17919657900469696",
       "badge": "Actualité",
-      "eyebrow": "Octobre 2026",
-      "title": "🎃👻Halloween est la!",
-      "text": "",
-      "image": "images/news/ig-18115792345822151.jpg",
-      "imageAlt": "🎃👻Halloween est la! — Chocolaterie du Bugnon",
+      "eyebrow": "Novembre 2026",
+      "title": "🎄 Les Calendriers sont arrivés !",
+      "text": "🍫✨ Un peu de douceur pour patienter jusqu’à Noël ! ❤️ N’hésitez pas à réserver, séries limitées !",
+      "image": "images/news/ig-17919657900469696.jpg",
+      "imageAlt": "🎄 Les Calendriers sont arrivés ! — Chocolaterie du Bugnon",
       "cta": {
         "label": "Voir sur Instagram",
-        "href": "https://www.instagram.com/p/DeMR2pEMsD8/"
+        "href": "https://www.instagram.com/p/Df-e22FMgvf/"
       },
-      "date": "2026-10-07",
+      "date": "2026-11-20",
       "source": "instagram",
       "review": true,
       "featured": false
